@@ -74,7 +74,7 @@ Está a ser observada, a título complementar: a viabilidade potencial de opera�
 
 - Gestão de abuse de CPU, disco e rede de forma totalmente automática e altamente granular.
 
-- Implementação de opções para ballooning (não implementado by default) para situações em que seja necessária uma partilha de páginas inter-VM ou gestão de RAM interservidor por razões comerciais ou técnicas e para garantir estabilidade junto do cliente, com granularidade por VM, por plano e/ou por utilizador
+- Implementação de opções para ballooning (não implementado by default) para situações em que seja necessária uma partilha pontual de páginas inter-VM ou gestão de RAM interservidor por razões comerciais ou técnicas e para garantir estabilidade junto do cliente, com granularidade por VM, por plano e/ou por utilizador
 
 - Suporte nativo a 2FA e atualização de informações, estados e pacotes comerciais em tempo real e <5 segundos, com gestão automática.
 
