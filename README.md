@@ -30,10 +30,15 @@ Utiliza QEMU/KVM e os servidores correm em QEMU/KVM, que é open-source e utiliz
 
 # Stack (decidida — modelo híbrido)
 ·	Agente (cada host KVM): Go — binário único, libvirt/nftables nativos.
+
 ·	Control plane: .NET (ASP.NET Core + Blazor Server) — UI rica e tempo real.
+
 ·	Base de dados: PostgreSQL (importação one-time do MariaDB atual).
+
 ·	Contrato control↔agente: HTTP/JSON + TLS, JWT RS256 curto, spec OpenAPI.
+
 ·	Cache/fila/realtime: Redis/Valkey. Console: WebSocket → noVNC.
+
 - Outros elementos a designar
 
 # Sistemas Operativos para Target no Control Server e nos Hypervisors.
@@ -50,6 +55,9 @@ Está a ser observada, a título complementar: a viabilidade potencial de opera�
 
 # Estado atual
 Fase 0 concluída + Fase 1 em curso.
+
 ·	Fase 0: control (.NET) ↔ agente (Go) por JWT RS256, /v1/ping ponta-a-ponta.
+
 ·	Fase 1 (parcial): gerador de XML de domínio libvirt (q35/RAW/virtio/VNC/guest-agent) + ligação ao libvirt (/v1/host); UI admin + cliente navegável.
+
 Total de fases de desenvolvimento previstas: 9
