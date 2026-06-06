@@ -52,7 +52,7 @@ Sistemas à partida também compatíveis: outros RHEL-based com o kernel da Red 
 Outros sistemas Linux não serão suportados nativamente por não haver razão técnica ou comercial que o justifique.
 Sistemas para hypervisor mais antigos, mas da mesma categoria, também não serão suportados: esta ferramenta utiliza exclusivamente nftables e nunca iptables.
 
-Está a ser observada, a título complementar: a viabilidade potencial de operação em Windows com Windows Server Core no control server e/ou nos hypervisors (e utilização complementar de Hyper-V, sobretudo para VMs Windows-based), e com BSD no control server + bhyve nos hypervisors. Também Xen está a ser analisado.
+Está a ser observada, a título complementar: a viabilidade potencial de operação em Windows com Windows Server Core no control server e/ou nos hypervisors (e utilização complementar de Hyper-V, sobretudo para VMs Windows-based), e a utilização de Xen. 
 
 # Funções Principais
 
