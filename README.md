@@ -13,7 +13,7 @@ Implementa, ainda, novas funcionalidades de qualidade de vida para o Cliente, co
 
 Porque num mercado de hosting virtual ou dedicado, ter uma plataforma única detida pela própria empresa que vende o serviço, mutável e adaptável às necessidades existentes e futuras, é um fator chave (key) de diferenciação, e permite uma perspetiva de serviço amplamente abrangente - tal como uma águia (Eagle).
 
-E para ser honesto, porque foi o melhor nome que me ocorreu no espaço de 5 minutos que não pertencia a qualquer outra marca no setor tecnológico.
+E para ser honesto, porque foi o melhor nome que ocorreu ao autor no espaço de 5 minutos que não pertencia a qualquer outra marca no setor tecnológico.
 
 # Esta nova plataforma vai criar disrupção a quem tem VMs, como ocorre em migrações entre produtos de hypervisor (e.g. SolusVM » VirtFusion, Proxmox » Virtualizor)?
 
