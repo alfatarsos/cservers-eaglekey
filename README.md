@@ -47,7 +47,7 @@ AlmaLinux 10 (preferencial) e Debian 13. O versioning destes OS é estável, pos
 
 O sistema está todo ele pensado para, do Control Server aos Hypervisors, ser o mais monolítico e empresarial possível na abordagem.
 
-Sistemas potencialmente compatíveis: outros RHEL-based com o kernel fixo pela Red Hat (Rocky Linux 10, Oracle Linux 10 na variante non-UEK) e openSUSE Leap / SUSE Linux Enterprise Server.
+Sistemas à partida também compatíveis: outros RHEL-based com o kernel da Red Hat (Rocky Linux 10, Oracle Linux 10 non-UEK, Red Hat Enterprise Linux) e openSUSE Leap / SUSE Linux Enterprise Server, sujeito a validação de versioning e comportamento de packages respetivo.
 
 Outros sistemas Linux não serão suportados nativamente por não haver razão técnica ou comercial que o justifique.
 Sistemas para hypervisor mais antigos, mas da mesma categoria, também não serão suportados: esta ferramenta utiliza exclusivamente nftables e não iptables.
