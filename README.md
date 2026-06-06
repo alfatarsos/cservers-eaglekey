@@ -60,7 +60,7 @@ Está a ser observada, a título complementar: a viabilidade potencial de opera�
 
 - Lite Version com páginas carregáveis em texto, sem imagens, acessível de forma muito leve e baseada a gestão de conta em texto, e consola virsh exposta para gestão da VM. Compatível com redes GPRS/EDGE/UMTS+, linhas telefónicas 56K e RDIS, e ligações por satélite pré-Leo/Starlink e similares. Permite gestão de VMs e de conta-cliente quer de forma fixa, em computadores que suportem browsers como Lynx, quer em movimento e até em telemóveis com Symbian S60 ou Blackberry (via Opera Mini), possibilitando uma adaptação ao estilo de vida do Cliente em qualquer lugar.
 
-- Full Version de carregamento rápido, poderosa mas simplificada no display, sem overlays pesados para com o servidor - até 10x mais performance que soluções comerciais de control server/hypervisor baseadas a PHP/Laravel com ASP.NET Core + Blazor/Razor + Go.
+- Full Version de carregamento rápido, poderosa mas simplificada no display, sem overlays pesados para com o servidor - até 10x mais performance que soluções comerciais de control server/hypervisor baseadas a PHP/Laravel, com ASP.NET Core + Blazor/Razor + Go.
 
 - Cross-platform: 1º control system que permite deployment em Windows Server, Linux e BSD desde que os toolings corretos sejam suportados e estejam instalados.
 
