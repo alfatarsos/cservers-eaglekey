@@ -95,7 +95,7 @@ Está a ser observada, a título complementar: a viabilidade potencial de opera�
 - Simplificação da área de Hourly Billing para meras comunicações inter-API, gestão virtual por hora e cálculo correto de fundos inspirado em SolusVM 2
 
 - Gestão complementar de clientes para servidores dedicados (via APIs dos principais fabricantes), clientes para semi-dedicados ou carry-over (sistema híbrido) e para containers (sistema de containers a designar).
-- 
+
 - Capacidade de fácil replicação multissistemas para evitar períodos de downtime de plataforma junto do Cliente, em todas as frentes.
 
 # Estado atual
