@@ -53,11 +53,51 @@ Outros sistemas Linux não serão suportados nativamente por não haver razão t
 
 Está a ser observada, a título complementar: a viabilidade potencial de operação em Windows com Windows Server Core no control server e/ou nos hypervisors (e utilização complementar de Hyper-V, sobretudo para VMs Windows-based), e com BSD no control server + bhyve nos hypervisors. Também Xen está a ser analisado.
 
+# Funções Principais
+
+- Aprovisionamento automático de hypervisors e de control server via scripting direto, tal como todos os outros toolings similares, mas com configuração automática de rede (como SolusVM 2)
+
+- Lite Version com páginas carregáveis em texto, sem imagens, acessível de forma muito leve e baseada a consola virsh exposta para gestão da VM e gestão de conta.  compatível com redes GPRS/EDGE/UMTS+, linhas telefónicas 56K e RDIS, e ligações por satélite pré-Leo/Starlink e similares. Permite gestão de VMs e de conta-cliente quer de forma fixa, em computadores que suportem browsers como Lynx, quer em movimento e até em telemóveis com Symbian S60 ou Blackberry (via Opera Mini), possibilitando uma adaptação ao estilo de vida do Cliente em qualquer lugar.
+
+- Full Version de carregamento rápido, poderosa mas simplificada no display, sem overlays pesados para com o servidor - até 10x mais performance que soluções comerciais de control server/hypervisor baseadas a PHP/Laravel com ASP.NET Core + Blazor/Razor + Go.
+
+- Cross-platform: 1º control system que permite deployment em Windows Server, Linux e BSD desde que os toolings corretos sejam suportados e estejam instalados.
+
+- Gestão automática de utilizadores e migração in-place, com controlos in-VM e em tempo real
+
+- Interface fácil e acessível até para novatos, mas sem esconder informação essencial para clientes especializados: nova filosofia de interface no client side e no admin side. Compatível com sistemas e ecrãs touch.
+
+- Sistemas automatizados de controlo de parâmetros comerciais com granularidade por plano, utilizador, VM e servidor dedicado, com hierarquia própria.
+
+- Sistemas automatizados de controlo de aspetos técnicos de volumetria de rede, utilização de CPU e utilização de disco.
+
+- Gestão de abuse de CPU, disco e rede de forma totalmente automática e altamente granular.
+
+- Implementação de opções para ballooning (não implementado by default) para situações em que seja necessária uma partilha de páginas inter-VM ou gestão de RAM interservidor por razões comerciais ou técnicas e para garantir estabilidade junto do cliente, com granularidade por VM, por plano e/ou por utilizador
+
+- Suporte nativo a 2FA e atualização de informações, estados e pacotes comerciais em tempo real e <5 segundos, com gestão automática.
+
+- Utilização da figura de Perfis de Hardware para situar pacotes comerciais nos respetivos Perfis de configuração, e aprovisionar automaticamente da forma mais eficaz possível conforme tooling que o requeira no hypervisor system, sem necessidade de atualizações
+
+- Suporte a DHCPv4, DHCPv6, Port Isolation, gestão de NICs, SR-IOV, e configuração automática de redes v4 e v6 sem necessidade de edição de ficheiros.
+
+- Suporte a scripting pré e pós-arranque em estrutura própria simplificada
+
+- Suporte a migrações live e migrações semi-live, quase sem downtime, com retirada e recolocação automática de IPs NAT
+
+- Suporte a figuras de High Availability e Latency-Sensitive em VMs participadas: serviços detidos pelo Cliente em dois ou mais pontos distintos podem ser replicados para failover automático e extremamente fácil de ativar. Ideal para situações em que um serviço simplesmente não pode falhar.
+
+- Opções para sistemas remotos de storage como S3, NFS e SFTP e gestão de backups em tempo real com formato próprio do sistema e encriptação automática
+
+- Inauguração da área de "Observabilidade": um one-stop shop para todos os dados inter-servidores dedicados e Inter-VMs
+
+- Simplificação da área de Hourly Billing para meras comunicações inter-API, gestão virtual por hora e cálculo correto de fundos inspirado em SolusVM 2
+
+- Gestão complementar de clientes para servidores dedicados (via APIs dos principais fabricantes), clientes para semi-dedicados ou carry-over (sistema híbrido) e para containers (sistema de containers a designar).
+- 
+- Capacidade de fácil replicação multissistemas para evitar períodos de downtime de plataforma junto do Cliente, em todas as frentes.
+
 # Estado atual
-Fase 0 concluída + Fase 1 em curso.
-
-·	Fase 0: control (.NET) ↔ agente (Go) por JWT RS256, /v1/ping ponta-a-ponta.
-
-·	Fase 1 (parcial): gerador de XML de domínio libvirt (q35/RAW/virtio/VNC/guest-agent) + ligação ao libvirt (/v1/host); UI admin + cliente navegável.
+Fase 0, 1, 3, 5 e 6 concluídas; Fases 2 e 4 a decorrer em paralelo. Refinação de algumas fases intermédias, designadamente conexão em Go e aspetos técnicos de gestão de fluxo de vida de uma VM.
 
 Total de fases de desenvolvimento previstas: 9
