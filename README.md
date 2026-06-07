@@ -52,7 +52,7 @@ Sistemas à partida também compatíveis: outros RHEL-based com o kernel da Red 
 Outros sistemas Linux não serão suportados nativamente por não haver razão técnica ou comercial que o justifique.
 Sistemas para hypervisor mais antigos, mas da mesma categoria, também não serão suportados: esta ferramenta utiliza exclusivamente nftables e nunca iptables.
 
-Está a ser observada, a título complementar: a viabilidade potencial de operação em Windows com Windows Server Core no control server e/ou nos hypervisors (e utilização complementar de Hyper-V, sobretudo para VMs Windows-based), e a utilização de Xen. 
+Está a ser observada, a título complementar: a viabilidade potencial de operação em Windows com Windows Server Core no control server.
 
 # Funções Principais
 
@@ -99,6 +99,6 @@ Está a ser observada, a título complementar: a viabilidade potencial de opera�
 - Capacidade de fácil replicação multissistemas para evitar períodos de downtime de plataforma junto do Cliente, em todas as frentes.
 
 # Estado atual
-Fase 0, 1, 3, 5 e 6 concluídas; Fases 2 e 4 a decorrer em paralelo. Refinação de algumas fases intermédias, designadamente conexão em Go e aspetos técnicos de gestão de fluxo de vida de uma VM.
+Fase 0, 1, 2, 3, 4, 5 e 6 concluídas; Refinação de elementos de comunicação e ponderação de outros fatores em curso.
 
 Total de fases de desenvolvimento previstas: 9
