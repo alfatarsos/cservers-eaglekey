@@ -52,7 +52,7 @@ Sistemas à partida também compatíveis: outros RHEL-based com o kernel da Red 
 Outros sistemas Linux não serão suportados nativamente por não haver razão técnica ou comercial que o justifique.
 Sistemas para hypervisor mais antigos, mas da mesma categoria, também não serão suportados: esta ferramenta utiliza exclusivamente nftables e nunca iptables.
 
-Está a ser observada, a título complementar: a viabilidade potencial de operação em Windows com Windows Server Core no control server.
+Está a ser observada, a título complementar: a viabilidade potencial de operação em Windows com Windows Server Core no control server. A razão para esta ponderação à partida invulgar tem que ver com a estabilidade de ABI e o suporte de longo prazo que existe em Windows Server numa licença ser tecnicamente comparável em extensão de anos.
 
 # Funções Principais
 
