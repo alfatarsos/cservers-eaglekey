@@ -54,7 +54,7 @@ Os sistemas Linux primariamente suportados são os mesmos para Control Server e 
 
 » SUSE Linux Enterprise Server
 
-» OpenSUSE Tumbleweed
+» OpenSUSE Leap
 
 » Debian 13. 
 
