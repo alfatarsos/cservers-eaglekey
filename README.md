@@ -61,11 +61,19 @@ Os sistemas Linux primariamente suportados são os mesmos para Control Server e 
 Outros sistemas Linux não serão suportados nativamente por não haver razão técnica ou comercial que o justifique.
 Sistemas para hypervisor mais antigos, mas da mesma categoria, também não serão suportados: esta ferramenta utiliza exclusivamente nftables e nunca iptables.
 
+Os sistemas Windows primariamente suportados são-no em Control Server (incluindo Server Core) - algo raro no setor - e em Máquinas Virtuais KVM:
+
+» Windows Server 2019
+
+» Windows Server 2022 
+
+» Windows Server 2026
+
+Hypervisors suportarão Hyper-V via KVM (base Linux, VMs sobem virtualizadas em Windows com Enlightenments), uma solução que retém em média 100% da performance original, permite maior isolamento, configurações mais fáceis (incluindo possibilidade ampla de SR-IOV) e melhor virtualização. 
+
 O versioning destes OS é estável, possibilitando por si uma estabilidade natural no serviço providenciado ao Cliente.
 
 O sistema está todo ele pensado para, do Control Server aos Hypervisors, ser o mais monolítico e empresarial possível na abordagem.
-
-Está a ser observada, a título complementar: a viabilidade potencial de operação em Windows com Windows Server Core no control server e no hypervisor (para business/empresarial). A razão para esta ponderação à partida invulgar tem que ver com a estabilidade de ABI e o suporte de longo prazo que existe em Windows Server numa licença ser tecnicamente comparável em extensão de anos.
 
 # Funções Principais
 
