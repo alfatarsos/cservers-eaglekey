@@ -45,11 +45,17 @@ Utiliza QEMU/KVM e os servidores correm em QEMU/KVM, que é open-source e utiliz
 # Sistemas Operativos para Target no Control Server e nos Hypervisors.
 
 Os sistemas Linux primariamente suportados são os mesmos para Control Server e Hypervisors:
+
 » AlmaLinux 10.x (preferencial)
+
 » Red Hat Enterprise Linux 10.x 
+
 » Rocky Linux 10.x 
+
 » SUSE Linux Enterprise Server
+
 » OpenSUSE Tumbleweed
+
 » Debian 13. 
 
 Outros sistemas Linux não serão suportados nativamente por não haver razão técnica ou comercial que o justifique.
