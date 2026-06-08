@@ -69,7 +69,7 @@ Os sistemas Windows primariamente suportados são-no em Control Server (incluind
 
 » Windows Server 2026
 
-Hypervisors suportarão Hyper-V via KVM (base Linux, VMs sobem virtualizadas em Windows com Enlightenments), uma solução que retém em média 100% da performance original, permite maior isolamento, configurações mais fáceis (incluindo possibilidade ampla de SR-IOV) e melhor virtualização. 
+Hypervisors suportarão Hyper-V via KVM (VMs globais sobem virtualizadas em Windows com Enlightenments, base Linux), uma solução que retém em média 100% da performance original, permite maior isolamento, configurações mais fáceis (incluindo possibilidade ampla de SR-IOV) e melhor virtualização. 
 
 O versioning destes OS é estável, possibilitando por si uma estabilidade natural no serviço providenciado ao Cliente.
 
