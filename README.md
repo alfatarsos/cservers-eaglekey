@@ -8,7 +8,7 @@ A turnkey solution for virtualization systems with a simplified approach
 # What is it?
 A self-hosted virtualization/IaaS platform, based on a dual control server ↔ hypervisor model, with a wealth of features but a strong focus on simplifying technical aspects, and an intuitive and beautiful interface for the client.
 
-It draws inspiration from VirtFusion but moves towards completely different solutions, in a clean-room logic in strict compliance with the software's terms and conditions. You can also use other reference bases with which the author has had contact (e.g., Proxmox, SolusVM 2) for certain functions.
+It draws inspiration from VirtFusion but moves towards completely different solutions, in a clean-room logic in strict compliance with the software's terms and conditions. You can also use other reference bases (e.g., Proxmox, SolusVM 2) for certain functions.
 
 It also implements new quality-of-life functionalities for the client, such as those applicable to automatic NAT management and dashboard management.
 
@@ -120,7 +120,7 @@ The entire system, from Control Server to Hypervisors, is designed to be as mono
 
 - Options for remote storage systems such as S3, NFS, and SFTP, and real-time backup management with system-specific format and automatic encryption.
 
-- (NEW) Introduction of a two-tiered backup system: customizable "hot backups" in lz4/zstd/gzip, and automatically converted "cold backups" for maximum resource savings by the Provider in lzma2. Decompression is faster than compression.
+- Introduction of a two-tiered backup system: customizable "hot backups" in lz4/zstd/gzip, and automatically converted "cold backups" for maximum resource savings by the Provider in lzma2. Decompression is faster than compression.
 
 - Launch of the "Observability" area: a one-stop shop for all inter-dedicated server and inter-VM data.
 
@@ -128,13 +128,21 @@ The entire system, from Control Server to Hypervisors, is designed to be as mono
 
 - Complementary client management for dedicated servers (via APIs from major manufacturers), clients for semi-dedicated or carry-over (hybrid system), and for containers (container system to be assigned).
 
-- (NEW) Complementary customer management in Reseller format, a new transaction category, whether through direct sales + mapping of the C-Servers product, or through sales on a dedicated website in WHMCS and Blesta with in-store interaction with the VM by the Client, on VPS/VDS and dedicated servers. Development of an API reseller for prepaid and postpaid systems and for VM communication. The industry's first 360º system with hosting + reselling in the same head-control and in satellite modules.
+- Complementary customer management in Reseller format, a new transaction category, whether through direct sales + mapping of the C-Servers product, or through sales on a dedicated website in WHMCS and Blesta with in-store interaction with the VM by the Client, on VPS/VDS and dedicated servers. Development of an API reseller for prepaid and postpaid systems and for VM communication. The industry's first 360º system with hosting + reselling in the same head-control and in satellite modules.
+
+- (NEW) Uptime page directly on-platform without any need to use a separate solution, internally and externally (for customers).
+
+- (NEW) Translated in 8 languages: English, Portuguese (Brazil), Portuguese (Portugal), Spanish, French, German, Chinese and Arabic.
+
+- (NEW) Full support for BGP announcements, IP Transit and Tunneling on VPS and Dedicated Servers.
+
+- (NEW) Security measurement for the customer and easy customer onboarding.
 
 - Easily replicable across multiple systems to avoid platform downtime for the Client, on all fronts.
 
 # Current Status
-Phases 0, 1, 2, 3, 4, 5 and 6 completed; Refinement of communication elements and consideration of other factors underway. Phase 7 in progress. Hardening in progress.
+Phases 0, 1, 2, 3, 4, 5, 6 and 7 completed; Refinement of communication elements and consideration of other factors underway. Phase 8 in progress. Hardening in progress.
 
-As of June 8, 2026, it is in Technical Beta.
+As of June 8, 2026, it is in Beta 2.
 
 Total planned development phases: 9
