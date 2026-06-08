@@ -44,14 +44,20 @@ Utiliza QEMU/KVM e os servidores correm em QEMU/KVM, que é open-source e utiliz
 
 # Sistemas Operativos para Target no Control Server e nos Hypervisors.
 
-AlmaLinux 10 (preferencial) e Debian 13. O versioning destes OS é estável, possibilitando por si uma estabilidade natural no serviço providenciado ao Cliente, ao contrário do que acontece com sistemas como Ubuntu Server, Fedora Server, CentOS Stream e Arch Linux (entre outros), que podem introduzir bugs e indisponibilidades num lado ou noutro. 
-
-O sistema está todo ele pensado para, do Control Server aos Hypervisors, ser o mais monolítico e empresarial possível na abordagem.
-
-Sistemas à partida também compatíveis: outros RHEL-based com o kernel da Red Hat (Rocky Linux 10, Oracle Linux 10 non-UEK, Red Hat Enterprise Linux) e openSUSE Leap / SUSE Linux Enterprise Server, sujeito a validação de versioning e comportamento de packages respetivo.
+Os sistemas Linux primariamente suportados são os mesmos para Control Server e Hypervisors:
+» AlmaLinux 10.x (preferencial)
+» Red Hat Enterprise Linux 10.x 
+» Rocky Linux 10.x 
+» SUSE Linux Enterprise Server
+» OpenSUSE Tumbleweed
+» Debian 13. 
 
 Outros sistemas Linux não serão suportados nativamente por não haver razão técnica ou comercial que o justifique.
 Sistemas para hypervisor mais antigos, mas da mesma categoria, também não serão suportados: esta ferramenta utiliza exclusivamente nftables e nunca iptables.
+
+O versioning destes OS é estável, possibilitando por si uma estabilidade natural no serviço providenciado ao Cliente.
+
+O sistema está todo ele pensado para, do Control Server aos Hypervisors, ser o mais monolítico e empresarial possível na abordagem.
 
 Está a ser observada, a título complementar: a viabilidade potencial de operação em Windows com Windows Server Core no control server e no hypervisor (para business/empresarial). A razão para esta ponderação à partida invulgar tem que ver com a estabilidade de ABI e o suporte de longo prazo que existe em Windows Server numa licença ser tecnicamente comparável em extensão de anos.
 
