@@ -22,7 +22,7 @@ And to be honest, because it was the best name that occurred to the author in th
 
 No. The platform will be a drop-in replacement in the structure (crown) immediately outside the covered servers, which will continue to run as normal, and will allow either a clean-slate approach (implementation from scratch) or an in-place conversion approach (potentially introducing small breaking changes that do not affect access to VMs, but may even improve the approach).
 
-It uses QEMU/KVM, and the servers run on QEMU/KVM, which is open-source and usable by everyone; it utilizes networking technologies such as libvirt, MacVTap, and OpenVSwitch, which are open-source; it operates in the Linux user-space and kernel-space, which is open-source. Nothing used by commercial products is patentable, except for the (proprietary) recipe, graphics, and implementation method (the so-called IP). As such, users can continue with their services as normal.
+It uses QEMU/KVM, and the servers run on QEMU/KVM, which is open-source and usable by everyone; it utilizes networking technologies such as libvirt, MacVTap, which are open-source; it operates in the Linux user-space and kernel-space, which is open-source. Nothing used by commercial products is patentable, except for the (proprietary) recipe, graphics, and implementation method (the so-called IP). As such, users can continue with their services as normal.
 
 # Design Principles
 1. Simple — little ceremony, easy to reason and operate.
@@ -137,6 +137,8 @@ The entire system, from Control Server to Hypervisors, is designed to be as mono
 - (NEW) Full support for BGP announcements, IP Transit and Tunneling on VPS and Dedicated Servers.
 
 - (NEW) Security measurement for the customer and easy customer onboarding.
+
+- (NEW) Network profiler for automatic provisioning of dual-interface VPS/Server solutions and automatic provisioning/changes on NAT rules and HAProxy, including a new button, "Flush NAT", when a customer gets without NAT access due to conntrack retaining an active connection. 
 
 - Easily replicable across multiple systems to avoid platform downtime for the Client, on all fronts.
 
