@@ -1,3 +1,7 @@
+<p align="center">
+<img width="199" height="200" alt="logoeaglekey-jpg" src="https://github.com/user-attachments/assets/1dd4ff58-3b30-4885-bb00-7419d3d85e23" />
+</p>
+
 # C-Servers EagleKey
 A turn-key solution for virtualization systems with a simplifying approach
 
