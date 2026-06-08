@@ -22,7 +22,7 @@ E para ser honesto, porque foi o melhor nome que ocorreu ao autor no espaço de 
 
 Não. A plataforma será um drop-in replacement na estrutura (coroa) imediatamente exterior aos servidores abrangidos, que continuarão a correr como normalmente, e permitirá quer um clean-slate approach (implementação do zero), quer um in-place conversion approach (potencialmente introduzindo pequenas breaking changes que não afetam o acesso às VMs, mas poderão até melhorar a abordagem). 
 
-Utiliza QEMU/KVM e os servidores correm em QEMU/KVM, que é open-source e utilizável por todos; utiliza tecnologias de networking como libvirt, MacVTap, OpenVSwitch, que são open-source; opera no user-space e kernel-space de Linux, que é open-source. Nada do que é utilizado pelos produtos comerciais são elementos patenteáveis, com a exceção da recipe (própria), grafismos e forma de implementação (o chamado IP). Como tal, os utilizadores podem continuar como normalmente com os seus serviços. 
+Utiliza QEMU/KVM e os servidores correm em QEMU/KVM, que é open-source e utilizável por todos; utiliza tecnologias de networking como libvirt, MacVTap, que são open-source; opera no user-space e kernel-space de Linux, que é open-source. Nada do que é utilizado pelos produtos comerciais são elementos patenteáveis, com a exceção da recipe (própria), grafismos e forma de implementação (o chamado IP). Como tal, os utilizadores podem continuar como normalmente com os seus serviços. 
 
 # Princípios de design
 1.	Simples — pouca cerimónia, fácil de raciocinar e operar.
@@ -114,7 +114,7 @@ O sistema está todo ele pensado para, do Control Server aos Hypervisors, ser o 
 
 - Opções para sistemas remotos de storage como S3, NFS e SFTP e gestão de backups em tempo real com formato próprio do sistema e encriptação automática
 
-- (NOVO) Introdução de um sistema de two-tiering no backup: "hot backups" em lz4/zstd/gzip customizável, "cold backups" automaticamente convertidos para poupança máxima de recursos pelo Provedor em lzma2. Descompressões são mais rápidas que compressões.
+- Introdução de um sistema de two-tiering no backup: "hot backups" em lz4/zstd/gzip customizável, "cold backups" automaticamente convertidos para poupança máxima de recursos pelo Provedor em lzma2. Descompressões são mais rápidas que compressões.
 
 - Inauguração da área de "Observabilidade": um one-stop shop para todos os dados inter-servidores dedicados e Inter-VMs
 
@@ -122,7 +122,17 @@ O sistema está todo ele pensado para, do Control Server aos Hypervisors, ser o 
 
 - Gestão complementar de clientes para servidores dedicados (via APIs dos principais fabricantes), clientes para semi-dedicados ou carry-over (sistema híbrido) e para containers (sistema de containers a designar).
 
-- (NOVO) Gestão complementar de clientes em formato Reseller, nova categoria de transação, quer por venda direta + mapping do produto C-Servers, quer por venda em website próprio em WHMCS e Blesta com interação in-store com a VM por parte do Cliente, em VPS/VDS e servidores dedicados. Desenvolvimento de API reseller para prepaid e post-paid systems e para comunicação de VMs. Primeiro sistema 360º da indústria com hosting + reselling no mesmo head-control e em módulos-satélite.
+- Gestão complementar de clientes em formato Reseller, nova categoria de transação, quer por venda direta + mapping do produto C-Servers, quer por venda em website próprio em WHMCS e Blesta com interação in-store com a VM por parte do Cliente, em VPS/VDS e servidores dedicados. Desenvolvimento de API reseller para prepaid e post-paid systems e para comunicação de VMs. Primeiro sistema 360º da indústria com hosting + reselling no mesmo head-control e em módulos-satélite.
+
+- (Novo) Página de uptime agora é alojada na própria plataforma sem necessidade de utilização de soluções separadas, com informação a título interno e externo para os consumidores. 
+
+- (Novo) Traduzido em 8 idiomas: Inglês, Português do Brasil, Português de Portugal, Espanhol, Francês, Alemão, Chinês e Árabe
+
+- (Novo) Suporte completo para anúncios BGP, IP Transit e túneis, em serviços VPS/VDS e em servidores dedicados bare-metal.  
+
+- (Novo) Onboarding fácil para o cliente com medição de segurança em Conta.
+
+- (Novo) Perfilhador de Rede com provisionamento automático de VPS/Servidores com duas interfaces e aprovisionamento/mudanças automáticas em NAT rules e no HAProxy, incluindo um novo botão, Flush NAT, quando um cliente fica sem acesso NAT devido a retenção de conntrack que imediatamente despoleta o refresh necessário.
 
 - Capacidade de fácil replicação multissistemas para evitar períodos de downtime de plataforma junto do Cliente, em todas as frentes.
 
