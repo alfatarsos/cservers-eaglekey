@@ -39,6 +39,7 @@ Utiliza QEMU/KVM e os servidores correm em QEMU/KVM, que é open-source e utiliz
 
 ·	Cache/fila/realtime: Redis/Valkey. Console: WebSocket → noVNC.
 
+- (NOVO) Estatísticas de rede diretamente extraídas para fácil análise e abuse monitoring; VictoriaMetrics para outras estatísticas globais e particulares.
 - Outros elementos a designar
 
 # Sistemas Operativos para Target no Control Server e nos Hypervisors.
@@ -52,7 +53,7 @@ Sistemas à partida também compatíveis: outros RHEL-based com o kernel da Red 
 Outros sistemas Linux não serão suportados nativamente por não haver razão técnica ou comercial que o justifique.
 Sistemas para hypervisor mais antigos, mas da mesma categoria, também não serão suportados: esta ferramenta utiliza exclusivamente nftables e nunca iptables.
 
-Está a ser observada, a título complementar: a viabilidade potencial de operação em Windows com Windows Server Core no control server. A razão para esta ponderação à partida invulgar tem que ver com a estabilidade de ABI e o suporte de longo prazo que existe em Windows Server numa licença ser tecnicamente comparável em extensão de anos.
+Está a ser observada, a título complementar: a viabilidade potencial de operação em Windows com Windows Server Core no control server e no hypervisor (para business/empresarial). A razão para esta ponderação à partida invulgar tem que ver com a estabilidade de ABI e o suporte de longo prazo que existe em Windows Server numa licença ser tecnicamente comparável em extensão de anos.
 
 # Funções Principais
 
@@ -90,15 +91,20 @@ Está a ser observada, a título complementar: a viabilidade potencial de opera�
 
 - Opções para sistemas remotos de storage como S3, NFS e SFTP e gestão de backups em tempo real com formato próprio do sistema e encriptação automática
 
+- (NOVO) Introdução de um sistema de two-tiering no backup: "hot backups" em lz4/zstd/gzip customizável, "cold backups" automaticamente convertidos para poupança máxima de recursos pelo Provedor em lzma2. Descompressões são mais rápidas que compressões.
+
 - Inauguração da área de "Observabilidade": um one-stop shop para todos os dados inter-servidores dedicados e Inter-VMs
 
 - Simplificação da área de Hourly Billing para meras comunicações inter-API, gestão virtual por hora e cálculo correto de fundos inspirado em SolusVM 2
 
 - Gestão complementar de clientes para servidores dedicados (via APIs dos principais fabricantes), clientes para semi-dedicados ou carry-over (sistema híbrido) e para containers (sistema de containers a designar).
 
+- (NOVO) Gestão complementar de clientes em formato Reseller, nova categoria de transação, quer por venda direta + mapping do produto C-Servers, quer por venda em website próprio em WHMCS e Blesta com interação in-store com a VM por parte do Cliente, em VPS/VDS e servidores dedicados. Desenvolvimento de API reseller para prepaid e post-paid systems e para comunicação de VMs. Primeiro sistema 360º da indústria com hosting + reselling no mesmo head-control e em módulos-satélite.
+
 - Capacidade de fácil replicação multissistemas para evitar períodos de downtime de plataforma junto do Cliente, em todas as frentes.
 
 # Estado atual
-Fase 0, 1, 2, 3, 4, 5 e 6 concluídas; Refinação de elementos de comunicação e ponderação de outros fatores em curso.
+Fase 0, 1, 2, 3, 4, 5 e 6 concluídas; Refinação de elementos de comunicação e ponderação de outros fatores em curso. Fase 7 em curso. Hardening em curso.
+Encontra-se, à data de 08-06-2026, em Technical Beta.
 
 Total de fases de desenvolvimento previstas: 9
