@@ -8,7 +8,7 @@ A turnkey solution for virtualization systems with a simplified approach
 # What is it?
 A self-hosted virtualization/IaaS platform, based on a dual control server ↔ hypervisor model, with a wealth of features but a strong focus on simplifying technical aspects, and an intuitive and beautiful interface for the client.
 
-It draws inspiration from VirtFusion but moves towards completely different solutions, in a clean-room logic in strict compliance with the software's terms and conditions. You can also use other reference bases (e.g., Proxmox, SolusVM 2) for certain functions.
+It draws inspiration from VirtFusion but moves towards completely different solutions, in a clean-room logic in strict compliance with the software's terms and conditions. Also other inspiration bases exist (e.g., Proxmox, SolusVM 2) for certain functions.
 
 It also implements new quality-of-life functionalities for the client, such as those applicable to automatic NAT management and dashboard management.
 
