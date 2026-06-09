@@ -128,7 +128,7 @@ The entire system, from Control Server to Hypervisors, is designed to be as mono
 
 - Complementary client management for dedicated servers (via APIs from major manufacturers), clients for semi-dedicated or carry-over (hybrid system), and for containers (container system to be assigned).
 
-- Complementary customer management in Reseller format, a new transaction category, whether through direct sales + mapping of the C-Servers product, or through sales on a dedicated website in WHMCS and Blesta with in-store interaction with the VM by the Client, on VPS/VDS and dedicated servers. Development of an API reseller for prepaid and postpaid systems and for VM communication. The industry's first 360º system with hosting + reselling in the same head-control and in satellite modules.
+- Complementary customer management in Reseller format, a new transaction category, whether through direct sales + mapping of the C-Servers product, or through sales on a dedicated website in WHMCS and Blesta with in-store interaction with the VM by the Client, on VPS/VDS and dedicated servers. Development of an API reseller for prepaid and postpaid systems and for VM communication. The industry's first 360º system with hosting + reselling for virtual and dedicated servers.
 
 - (NEW) Uptime page directly on-platform without any need to use a separate solution, internally and externally (for customers).
 
