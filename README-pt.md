@@ -122,7 +122,7 @@ O sistema está todo ele pensado para, do Control Server aos Hypervisors, ser o 
 
 - Gestão complementar de clientes para servidores dedicados (via APIs dos principais fabricantes), clientes para semi-dedicados ou carry-over (sistema híbrido) e para containers (sistema de containers a designar).
 
-- Gestão complementar de clientes em formato Reseller, nova categoria de transação, quer por venda direta + mapping do produto C-Servers, quer por venda em website próprio em WHMCS e Blesta com interação in-store com a VM por parte do Cliente, em VPS/VDS e servidores dedicados. Desenvolvimento de API reseller para prepaid e post-paid systems e para comunicação de VMs. Primeiro sistema 360º da indústria com hosting + reselling no mesmo head-control e em módulos-satélite.
+- Gestão complementar de clientes em formato Reseller, nova categoria de transação, quer por venda direta + mapping do produto C-Servers, quer por venda em website próprio em WHMCS e Blesta com interação in-store com a VM por parte do Cliente, em VPS/VDS e servidores dedicados. Desenvolvimento de API reseller para prepaid e post-paid systems e para comunicação de VMs. Primeiro sistema 360º da indústria com hosting + reselling para VPS e servidores dedicados.
 
 - (Novo) Página de uptime agora é alojada na própria plataforma sem necessidade de utilização de soluções separadas, com informação a título interno e externo para os consumidores. 
 
