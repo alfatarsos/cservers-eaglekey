@@ -60,7 +60,7 @@ It uses QEMU/KVM, and the servers run on QEMU/KVM, which is open-source and usab
 
 • Cache/queue/realtime: Redis/Valkey. Console: WebSocket → noVNC, Serial Console.
 
-- VictoriaMetrics for other global and private statistics and general uptime verification, public and private.
+• VictoriaMetrics for other global and private statistics and general uptime verification, public and private.
 
 # Target Operating Systems
 
