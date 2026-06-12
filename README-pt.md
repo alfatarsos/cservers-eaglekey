@@ -111,7 +111,7 @@ Todo o sistema, desde o Servidor de Controlo aos Hipervisores, foi concebido par
 
 - Suporte para DHCPv4, DHCPv6, isolamento de portas, gestão de NIC, SR-IOV e configuração automática de redes v4 e v6 sem necessidade de editar ficheiros; scripts de pré e pós-inicialização são compatíveis numa estrutura simplificada em Provisionadores. Perfilador de rede para aprovisionamento automático de soluções VPS/Servidor de interface dupla e aprovisionamento/alterações automáticas nas regras NAT e HAProxy, incluindo um novo botão, "Limpar NAT", quando um cliente fica sem acesso NAT devido ao conntrack manter uma ligação ativa.
 
-- - Suporte para migrações ao vivo e semi-ao vivo, com tempo de inatividade praticamente nulo, com remoção e substituição automática de IPs NAT.
+- Suporte para migrações ao vivo e semi-ao vivo, com tempo de inatividade praticamente nulo, com remoção e substituição automática de IPs NAT.
 
 - Suporte para características de alta disponibilidade e sensíveis à latência em VMs controladas: os serviços mantidos pelo Cliente em dois ou mais locais distintos podem ser replicados para failover automático e são extremamente fáceis de ativar. Ideal para situações em que um serviço simplesmente não pode falhar.
 
@@ -119,7 +119,7 @@ Todo o sistema, desde o Servidor de Controlo aos Hipervisores, foi concebido par
 
 - Lançamento da área "Observabilidade": um ponto único de acesso para todos os dados entre servidores dedicados e entre VMs.
 
-- - Simplificação da área de faturação por hora para comunicação inter-API simplificada, gestão virtual de horas e cálculo preciso de fundos, inspirado no SolusVM 2.
+-  Simplificação da área de faturação por hora para comunicação inter-API simplificada, gestão virtual de horas e cálculo preciso de fundos, inspirado no SolusVM 2.
 
 - Gestão complementar de clientes para servidores dedicados (via APIs dos principais fabricantes), clientes para servidores semi-dedicados ou com possibilidade de transferência de tempo (sistema híbrido) e para contentores (sistema de contentores a atribuir).
 
@@ -127,7 +127,7 @@ Todo o sistema, desde o Servidor de Controlo aos Hipervisores, foi concebido par
 
 - Página de tempo de atividade diretamente na plataforma, sem necessidade de utilizar uma solução separada, interna ou externamente (para clientes).
 
-- - Traduzido para 8 idiomas: inglês, português (Brasil), português (Portugal), espanhol, francês, alemão, chinês e árabe.
+- Traduzido para 8 idiomas: inglês, português (Brasil), português (Portugal), espanhol, francês, alemão, chinês e árabe.
 
 - Suporte completo para anúncios BGP, trânsito IP e tunelamento em servidores VPS e dedicados.
 
