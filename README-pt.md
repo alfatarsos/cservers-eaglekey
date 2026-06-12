@@ -123,7 +123,7 @@ Todo o sistema, desde o Servidor de Controlo aos Hipervisores, foi concebido par
 
 - Gestão complementar de clientes para servidores dedicados (via APIs dos principais fabricantes), clientes para servidores semi-dedicados ou com possibilidade de transferência de tempo (sistema híbrido) e para contentores (sistema de contentores a atribuir).
 
-- Gestão complementar de clientes no formato Revendedor, uma nova categoria de transação, seja através de vendas diretas + mapeamento do produto C-Servers, ou através de vendas num site dedicado no WHMCS e Blesta com interação direta com a VM por parte do Cliente, em servidores VPS/VDS e dedicados. Desenvolvimento de uma API de revenda para sistemas pré-pagos e pós-pagos e para comunicação com VMs. O primeiro sistema 360º do setor com alojamento + revenda para servidores virtuais e dedicados.
+- Gestão complementar de clientes no formato Revendedor, uma nova categoria de transação, seja através de vendas diretas + mapeamento do produto C-Servers, ou através de vendas num site dedicado no WHMCS e Blesta com interação direta com a VM por parte do Cliente, em servidores VPS/VDS e dedicados. Desenvolvimento de uma API de revenda para sistemas pré-pagos e pós-pagos e para comunicação com VMs. Um dos primeiros sistemas 360º do setor com alojamento + revenda para servidores virtuais e dedicados.
 
 - Página de tempo de atividade diretamente na plataforma, sem necessidade de utilizar uma solução separada, interna ou externamente (para clientes).
 
