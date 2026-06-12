@@ -61,7 +61,7 @@ Utiliza QEMU/KVM, e os servidores correm em QEMU/KVM, que é open source e acess
 
 • Cache/fila/tempo real: Redis/Valkey. Consola: WebSocket → noVNC, Consola Serial.
 
-- VictoriaMetrics para outras estatísticas globais e privadas e verificação geral de disponibilidade, pública e privada.
+• VictoriaMetrics para outras estatísticas globais e privadas e verificação geral de disponibilidade, pública e privada.
 
 # Sistemas Operativos Alvo
 
