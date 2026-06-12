@@ -52,7 +52,7 @@ Utiliza QEMU/KVM, e os servidores correm em QEMU/KVM, que é open source e acess
 
 5.º Fiável — operações seguras, idempotentes e auditáveis ​​em máquinas virtuais.
 
-# Pilha (definida — modelo híbrido)
+# Stack definida
 • Agente (cada host KVM): Go — um único binário em Go, libvirt/nftables nativo e comunicação com o plano de controlo.
 
 • Plano de controlo: .NET (ASP.NET Core + Blazor Server) — interface de utilizador rico e em tempo real; Kestrel e Nginx. Desempenho até 10 vezes superior a soluções similares baseadas em PHP, com manutenção contínua garantida em ambas as plataformas: Go e .NET mantêm a compatibilidade e a lógica de código entre versões durante muitos anos.
