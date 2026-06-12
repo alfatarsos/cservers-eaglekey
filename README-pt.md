@@ -42,7 +42,7 @@ Não. A plataforma é uma substituição direta na estrutura (coroa) imediatamen
 Utiliza QEMU/KVM, e os servidores correm em QEMU/KVM, que é open source e acessível a todos; Utiliza tecnologias de rede como a libvirt e o MacVTap, que são de código aberto; opera no espaço do utilizador e no espaço do kernel do Linux, que também são de código aberto. Nada do que é utilizado em produtos comerciais é patenteável, exceto a receita (proprietária), os gráficos e o método de implementação (a chamada propriedade intelectual). Nenhum destes elementos é aqui utilizado, como se pode observar nas imagens.
 
 # Princípios de Design
-1. Simples — pouca complexidade, fácil de compreender e de operar.
+1.º Simples — pouca complexidade, fácil de compreender e de operar.
 
 2.º Rápido — baixa latência, baixo consumo de recursos.
 
