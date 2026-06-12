@@ -7,6 +7,8 @@ Uma solução turn-key para sistemas de virtualização com uma abordagem simpli
 
 # O que é
 
+Uma plataforma de virtualização/IaaS auto-hospedada, baseada num modelo de servidor de controlo duplo ↔ hipervisor, com uma vasta gama de funcionalidades, mas com um forte foco na simplificação dos aspetos técnicos e uma interface intuitiva e elegante para o cliente.
+
 <p align="center">
 <img width="840" height="525" alt="eg8" src="https://github.com/user-attachments/assets/2fc54c81-4162-4fdb-97c8-d171d681807a" />
 </p>
