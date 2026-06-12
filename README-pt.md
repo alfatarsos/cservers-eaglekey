@@ -83,8 +83,6 @@ Os sistemas de hipervisor mais antigos ou os sistemas que não implementem nftab
 
 Os principais sistemas operativos Windows suportados são o Servidor de Controlo (incluindo o Server Core) – uma raridade no setor – e as Máquinas Virtuais KVM:
 
-» Windows Server 2019
-
 » Windows Server 2022
 
 » Windows Server 2026
