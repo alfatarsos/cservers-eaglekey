@@ -5,25 +5,27 @@
 # C-Servers EagleKey
 Uma solução turn-key para sistemas de virtualização com uma abordagem simplificada
 
+# O que é
+
 <p align="center">
-<img width="840" height="525" alt="eg6" src="https://github.com/user-attachments/assets/be2aa2dd-43ae-4997-aa93-bcd888c4e04a" />
+<img width="840" height="525" alt="eg8" src="https://github.com/user-attachments/assets/2fc54c81-4162-4fdb-97c8-d171d681807a" />
 </p>
 
 <p align="center">
 <img width="840" height="525" alt="eg5" src="https://github.com/user-attachments/assets/d30ce6e4-76f0-4190-a15b-5f732dc69db8" />
 </p>
 
+Inspira-se no VirtFusion, mas adota soluções completamente diferentes, com uma lógica totalmente nova e em estrita conformidade com os termos e condições do software. Outras fontes de inspiração também existem (por exemplo, Proxmox, SolusVM 2) para determinadas funções.
+
+Implementa ainda novas funcionalidades que melhoram a experiência do utilizador, como as aplicáveis ​​à gestão automática de NAT e à gestão de painéis de controlo.
+
+<p align="center">
+<img width="840" height="525" alt="eg6" src="https://github.com/user-attachments/assets/be2aa2dd-43ae-4997-aa93-bcd888c4e04a" />
+</p>
+
 <p align="center">
 <img width="840" height="525" alt="eg4" src="https://github.com/user-attachments/assets/99489a67-4c86-4d3d-b71f-f2fbd5cd2db6" />
 </p>
-
-
-# O que é
-Plataforma de virtualização / IaaS auto-alojada, no modelo duplo control server ↔ hypervisors, com vasta riqueza de funcionalidades mas com forte procura de simplificação de aspetos técnicos, e uma interface intuitiva e bonita, para o Cliente.
-
-Inspira-se no VirtFusion mas parte para soluções completamente diferentes, numa lógica clean-room em estreito cumprimento dos termos e condições do software. Pode ainda utilizar como inspiração outras bases de referência com as quais o autor tenha tido contacto (ex: Proxmox, SolusVM 2) para determinadas funções. 
-
-Implementa, ainda, novas funcionalidades de qualidade de vida para o Cliente, como as aplicáveis à gestão automática de NAT e gestão de painel.
 
 # Porquê o nome EagleKey?
 
