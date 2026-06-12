@@ -82,8 +82,6 @@ Older hypervisor systems or systems that do not implement nftables by default wi
 
 The primarily supported Windows operating systems are in Control Server (including Server Core) – a rarity in the industry – and in KVM Virtual Machines:
 
-» Windows Server 2019
-
 » Windows Server 2022
 
 » Windows Server 2026
