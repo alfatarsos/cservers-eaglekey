@@ -9,20 +9,24 @@ A turnkey solution for virtualization systems with a simplified approach
 A self-hosted virtualization/IaaS platform, based on a dual control server ↔ hypervisor model, with a wealth of features but a strong focus on simplifying technical aspects, and an intuitive and beautiful interface for the client.
 
 <p align="center">
-<img width="840" height="525" alt="eg6" src="https://github.com/user-attachments/assets/be2aa2dd-43ae-4997-aa93-bcd888c4e04a" />
-</p>
-
-<p align="center">
 <img width="840" height="525" alt="eg5" src="https://github.com/user-attachments/assets/d30ce6e4-76f0-4190-a15b-5f732dc69db8" />
 </p>
 
 <p align="center">
-<img width="840" height="525" alt="eg4" src="https://github.com/user-attachments/assets/99489a67-4c86-4d3d-b71f-f2fbd5cd2db6" />
+<img width="840" height="525" alt="eg8" src="https://github.com/user-attachments/assets/2fc54c81-4162-4fdb-97c8-d171d681807a" />
 </p>
 
 It draws inspiration from VirtFusion but moves towards completely different solutions, in a clean-room logic in strict compliance with the software's terms and conditions. Also other inspiration bases exist (e.g., Proxmox, SolusVM 2) for certain functions.
 
 It also implements new quality-of-life functionalities for the client, such as those applicable to automatic NAT management and dashboard management.
+
+<p align="center">
+<img width="840" height="525" alt="eg6" src="https://github.com/user-attachments/assets/be2aa2dd-43ae-4997-aa93-bcd888c4e04a" />
+</p>
+
+<p align="center">
+<img width="840" height="525" alt="eg4" src="https://github.com/user-attachments/assets/99489a67-4c86-4d3d-b71f-f2fbd5cd2db6" />
+</p>
 
 # Why the name EagleKey?
 
