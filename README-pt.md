@@ -105,9 +105,7 @@ Todo o sistema, desde o Servidor de Controlo aos Hipervisores, foi concebido par
 
 - Interface fácil e acessível, mesmo para principiantes, mas sem ocultar informação essencial para clientes especializados: nova filosofia de interface tanto do lado do cliente como do lado do administrador. Compatível com ecrãs e sistemas sensíveis ao toque.
 
-- - Sistemas automatizados para controlo de parâmetros de negócio com granularidade por plano, utilizador, máquina virtual e servidor dedicado, com hierarquia própria; e para controlo de aspetos técnicos como o volume de rede, utilização de CPU, utilização de RAM e utilização de disco, automatizados.
-
-ically.
+- Sistemas automatizados para controlo de parâmetros de negócio com granularidade por plano, utilizador, máquina virtual e servidor dedicado, com hierarquia própria; e para controlo de aspetos técnicos como o volume de rede, utilização de CPU, utilização de RAM e utilização de disco, automatizados.
 
 - Suporte nativo para autenticação de dois fatores (2FA) e atualizações em tempo real e a cada 60 segundos de informação, estado e pacotes comerciais, com gestão automática.
 
