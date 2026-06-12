@@ -5,6 +5,19 @@
 # C-Servers EagleKey
 Uma solução turn-key para sistemas de virtualização com uma abordagem simplificada
 
+<p align="center">
+<img width="840" height="525" alt="eg6" src="https://github.com/user-attachments/assets/be2aa2dd-43ae-4997-aa93-bcd888c4e04a" />
+</p>
+
+<p align="center">
+<img width="840" height="525" alt="eg5" src="https://github.com/user-attachments/assets/d30ce6e4-76f0-4190-a15b-5f732dc69db8" />
+</p>
+
+<p align="center">
+<img width="840" height="525" alt="eg4" src="https://github.com/user-attachments/assets/99489a67-4c86-4d3d-b71f-f2fbd5cd2db6" />
+</p>
+
+
 # O que é
 Plataforma de virtualização / IaaS auto-alojada, no modelo duplo control server ↔ hypervisors, com vasta riqueza de funcionalidades mas com forte procura de simplificação de aspetos técnicos, e uma interface intuitiva e bonita, para o Cliente.
 
