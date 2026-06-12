@@ -36,7 +36,7 @@ And to be honest, because it was the best name that occurred to the author in th
 
 # Will this new platform create disruption for those who have VMs, as happens in migrations between hypervisor products?
 
-No. The platform is a drop-in replacement in the structure (crown) immediately outside the covered servers, which will continue to run as normal, and will allow either a clean-slate approach (implementation from scratch) or an in-place conversion approach with merely 15 seconds of downtime.
+No. The platform is a drop-in replacement in the structure (crown) immediately outside the covered servers, which will continue to run as normal, and will allow a clean-slate approach (implementation from scratch) and an in-place conversion approach with merely 15 seconds of downtime.
 
 It uses QEMU/KVM, and the servers run on QEMU/KVM, which is open-source and usable by everyone; it utilizes networking technologies such as libvirt, MacVTap, which are open-source; it operates in the Linux user-space and kernel-space, which is open-source. Nothing used by commercial products is patentable, except for the (proprietary) recipe, graphics, and implementation method (the so-called IP). Neither of those are used here, as observable with the images.
 
