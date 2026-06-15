@@ -110,7 +110,7 @@ The entire system, from Control Server to Hypervisors, is designed to be as mono
 
 - Support for DHCPv4, DHCPv6, Port Isolation, NIC management, SR-IOV, and automatic configuration of v4 and v6 networks without the need to edit files; pre- and post-start scripts are compatible in a simplified structure under Provisioners. Network profiler for automatic provisioning of dual-interface VPS/Server solutions and automatic provisioning/changes on NAT rules and HAProxy, including a new button, "Flush NAT", when a customer gets without NAT access due to conntrack retaining an active connection. 
 
-- Support for live and semi-live migrations, with almost no downtime, with automatic removal and replacement of NAT IPs.
+- Support for live and semi-live migrations, with almost no downtime (15 + 15 seconds), with automatic removal and replacement of NAT IPs.
 
 - Support for High Availability and Latency-Sensitive features in controlled VMs: services maintained by the Client in two or more distinct locations can be replicated for automatic failover and are extremely easy to activate. Ideal for situations where a service simply cannot fail.
 
@@ -120,7 +120,7 @@ The entire system, from Control Server to Hypervisors, is designed to be as mono
 
 - Simplification of the Hourly Billing area to simple inter-API communication, virtual hourly management, and accurate fund calculation inspired by SolusVM 2.
 
-- Complementary client management for dedicated servers (via APIs from major manufacturers), clients for semi-dedicated or carry-over (hybrid system), and for containers (container system to be assigned).
+- Complementary client management for dedicated servers (via APIs from major manufacturers), clients for semi-dedicated or carry-over (hybrid system), and for containers (Firecracker/microVM).
 
 - Complementary customer management in Reseller format, a new transaction category, whether through direct sales + mapping of the C-Servers product, or through sales on a dedicated website in WHMCS and Blesta with in-store interaction with the VM by the Client, on VPS/VDS and dedicated servers. Development of an API reseller for prepaid and postpaid systems and for VM communication. One of the industry's first 360º systems with hosting + reselling for virtual + dedicated.
 
@@ -134,9 +134,11 @@ The entire system, from Control Server to Hypervisors, is designed to be as mono
 
 - Easily replicable across multiple systems to avoid platform downtime for the Client, on all fronts.
 
-# Current Status
-Phases 0, 1, 2, 3, 4, 5, 6 and 7 completed; Refinement of communication elements and consideration of other factors underway. Phase 8 in progress. 
+- One-stop shop for updates hypervisor-wise and control-wise, including on the EagleKey code, with a dedicated mechanism that aggregates the RELEASE versioning and the dnf/apt package managers.
 
-As of June 12, 2026, it is in Beta 3 (next level statuses to obtain: Beta 4, RC1, RC2, RC3+).
+# Current Status
+Phases 0-8 completed; Phase 9 in progress. Total rounds of security hardening completed: 6.
+
+As of June 15, 2026, it is in RC1, fully operational beta (next level statuses to obtain: RC2, RC3+, Final).
 
 Total planned development phases: 10
