@@ -108,7 +108,7 @@ The entire system, from Control Server to Hypervisors, is designed to be as mono
 
 - Use of Hardware Profiles (QEMU) to place commercial packages in their respective configuration profiles, and automatically provision them in the most efficient way possible according to the tooling required by the hypervisor system, without any need for updates. Pre-compatible with the highest versioning from QEMU.
 
-- (NEW) For the first time on a general non-major hosting provider: Cloud Hypervisor with microVM and Direct Linux Booting (no UEFI) is implemented with KVM on major Linux distributions. Advantages include 200ms booting, significant RAM savings for the user and the provider, performance increases and lower usage latency, all while retaining full functionality. UEFI and/or QEMU will still be used on other OS families where applicable.
+- (NEW) For the first time at C-Servers: Cloud Hypervisor with microVM and Direct Linux Booting (no UEFI) is implemented with KVM on major Linux distributions. Advantages include 200ms booting, significant RAM savings for the user and the provider, performance increases and lower usage latency, all while retaining full functionality. UEFI and/or QEMU will still be used secondarily, where applicable.
 
 - Support for DHCPv4, DHCPv6, Port Isolation, NIC management, SR-IOV, and automatic configuration of v4 and v6 networks without the need to edit files; pre- and post-start scripts are compatible in a simplified structure under Provisioners. Network profiler for automatic provisioning of dual-interface VPS/Server solutions and automatic provisioning/changes on NAT rules and HAProxy, including a new button, "Flush NAT", when a customer gets without NAT access due to conntrack retaining an active connection. 
 
