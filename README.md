@@ -38,7 +38,7 @@ And to be honest, because it was the best name that occurred to the author in th
 
 No. The platform is a drop-in replacement in the structure (crown) immediately outside the covered servers, which will continue to run as normal, and will allow a clean-slate approach (implementation from scratch) and an in-place conversion approach with merely 15 seconds of downtime.
 
-It uses QEMU/KVM, and the servers run on QEMU/KVM, which is open-source and usable by everyone; it utilizes networking technologies such as libvirt, MacVTap, which are open-source; it operates in the Linux user-space and kernel-space, which is open-source. Nothing open-source used by commercial products is patentable, except for the (proprietary) recipe, graphics, and implementation method (the so-called IP). Neither of those are used here, as observable with the images.
+It uses Cloud Hypervisor and QEMU/KVM, and the servers run on these, which are open-source and usable by everyone; it utilizes networking technologies such as libvirt, MacVTap, which are open-source; it operates in the Linux user-space and kernel-space, which is open-source. Nothing open-source used by commercial products is patentable, except for the (proprietary) recipe, graphics, and implementation method (the so-called IP). Neither of those are used here, as observable with the images.
 
 # Design Principles
 1. Simple — little ceremony, easy to reason and operate.
@@ -106,7 +106,9 @@ The entire system, from Control Server to Hypervisors, is designed to be as mono
 
 - Native support for 2FA and real-time and 60-second updates of information, status, and business packages, with automatic management.
 
-- Use of Hardware Profiles to place commercial packages in their respective configuration profiles, and automatically provision them in the most efficient way possible according to the tooling required by the hypervisor system, without any need for updates. Pre-compatible with the highest versioning from QEMU.
+- Use of Hardware Profiles (QEMU) to place commercial packages in their respective configuration profiles, and automatically provision them in the most efficient way possible according to the tooling required by the hypervisor system, without any need for updates. Pre-compatible with the highest versioning from QEMU.
+
+- (NEW) For the first time on a general non-major hosting provider: Cloud Hypervisor with microVM and Direct Linux Booting (no UEFI) is implemented with KVM on major Linux distributions. Advantages include 200ms booting, significant RAM savings for the user and the provider, performance increases and lower usage latency, all while retaining full functionality. UEFI and/or QEMU will still be used on other OS families where applicable.
 
 - Support for DHCPv4, DHCPv6, Port Isolation, NIC management, SR-IOV, and automatic configuration of v4 and v6 networks without the need to edit files; pre- and post-start scripts are compatible in a simplified structure under Provisioners. Network profiler for automatic provisioning of dual-interface VPS/Server solutions and automatic provisioning/changes on NAT rules and HAProxy, including a new button, "Flush NAT", when a customer gets without NAT access due to conntrack retaining an active connection. 
 
