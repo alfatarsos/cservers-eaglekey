@@ -58,7 +58,7 @@ It uses Cloud Hypervisor and QEMU/KVM, and the servers run on these, which are o
 
 • Database: PostgreSQL.
 
-• Cache/queue/realtime: Redis/Valkey. Console: WebSocket → noVNC, Serial Console.
+• Console: WebSocket → noVNC, Serial Console.
 
 • VictoriaMetrics for other global and private statistics and general uptime verification, public and private.
 
