@@ -80,14 +80,6 @@ The primarily supported Linux systems are the same for Control Server and Hyperv
 
 Older hypervisor systems or systems that do not implement nftables by default will not be supported: this tool exclusively uses nftables and never iptables.
 
-The primarily supported Windows operating systems are in Control Server (including Server Core) – a rarity in the industry – and in KVM Virtual Machines:
-
-» Windows Server 2022
-
-» Windows Server 2026
-
-Hypervisors will support Hyper-V via KVM (global VMs run virtualized on Windows with Enlightenments), a solution that retains on average 99% of the original performance, allows for greater isolation, easier configurations (including extensive SR-IOV possibilities), and better virtualization.
-
 The entire system, from Control Server to Hypervisors, is designed to be as monolithic and enterprise-friendly as possible in its approach. The versioning of these operating systems is stable, enabling inherent stability in the service provided to the customer.
 
 # Some of the main functions
