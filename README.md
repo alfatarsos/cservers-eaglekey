@@ -131,8 +131,8 @@ The entire system, from Control Server to Hypervisors, is designed to be as mono
 - One-stop shop for updates hypervisor-wise and control-wise, including on the EagleKey code, with a dedicated mechanism that aggregates the RELEASE versioning and the dnf/apt package managers.
 
 # Current Status
-Phases 0-8 completed; Phase 9 in progress. Total rounds of security hardening completed: 15, including pentests, code inspection and fixing.
+Phases 0-9 completed; Phase 10 in progress. Total rounds of security hardening completed: 15, including pentests, code inspection and fixing.
 
-As of June 16, 2026, it is in RC2, fully operational beta (next level statuses to obtain: RC3+, Final).
+As of June 20, 2026, it is in RC4, fully operational beta (next level statuses to obtain: Final).
 
 Total planned development phases: 10
