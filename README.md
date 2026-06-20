@@ -84,51 +84,50 @@ The entire system, from Control Server to Hypervisors, is designed to be as mono
 
 # Some of the main functions
 
-- Automatic provisioning of hypervisors and control server via direct script, just like all other similar tooling, but with automatic network configuration (like SolusVM 2) and a fallback manual scripting tool.
+Automatic provisioning of hypervisors and VMs via GUI and billing modules, just like all other similar tooling, but with automatic network configuration (like SolusVM 2) and a fallback manual scripting tool.
 
-- Lite Version with loadable text pages, no images, very lightweight and text-based account management, with console included. Compatible with GPRS/EDGE/UMTS+ networks, 56K and ISDN phone lines, and pre-Leo/Starlink and similar satellite connections. Allows VM and client account management either in a fixed location, on computers that support browsers like Lynx, or on the go, even on mobile phones with Symbian S60 or Blackberry (via Opera Mini), enabling adaptation to the client's lifestyle anywhere.
+Lite Version with loadable text pages, no images, very lightweight and text-based account management, with console included. Compatible with GPRS/EDGE/UMTS+ networks, 56K and ISDN phone lines, and pre-Leo/Starlink and similar satellite connections. Allows VM and client account management either in a fixed location, on computers that support browsers like Lynx, or on the go, even on mobile phones with Symbian S60 or Blackberry (via Opera Mini), enabling adaptation to the client's lifestyle anywhere. 
 
-- Up to 10x more performance than commercial control server/hypervisor solutions based on PHP/Laravel, with ASP.NET Core + Blazor/Razor + Go.
+Up to 10x more performance than commercial control server/hypervisor solutions based on PHP/Laravel - EagleKey implements .NET Core 10 LTS + Blazor/Razor + Go. There is not a single hint of Javascript here, for example. 
 
-- Automatic user management and in-place migration, with in-VM and real-time controls.
+Automatic user management and in-place migration, with in-VM and real-time controls. 2FA, magic links and normal logins directly implemented. Native support for real-time updates of information, status, and business packages.
 
-- Easy and accessible interface, even for novices, but without hiding essential information for specialized clients: new interface philosophy on the client side and admin side. Compatible with touch screens and systems.
+Easy and accessible interface, even for novices, but without hiding essential information for specialized clients: new interface philosophy on the client side and admin side, clean and direct. Compatible with touch screens and systems.
 
-- Automated systems for controlling business parameters with granularity by plan, user, VM, and dedicated server, with its own hierarchy; and for controlling technical aspects of network volume, CPU usage, RAM usage and disk usage, automatically.
 
-- Native support for 2FA and real-time and 60-second updates of information, status, and business packages, with automatic management.
 
-- Use of Hardware Profiles (QEMU) to place commercial packages in their respective configuration profiles, and automatically provision them in the most efficient way possible according to the tooling required by the hypervisor system, without any need for updates. Pre-compatible with the highest versioning from QEMU.
+Automated systems for controlling business parameters with granularity by plan, user, VM, and dedicated server, with its own hierarchy; and for controlling technical aspects of network volume, CPU usage, RAM usage and disk usage, automatically and without any intervention needed. This will contribute for added performance for our customers, while resource abuses will be correctly and automatically held by the system with no administrative intervention required.
 
-- (NEW) For the first time at C-Servers: Cloud Hypervisor with microVM and Direct Linux Booting (no UEFI) is implemented with KVM on major Linux distributions. Advantages include 200ms booting, significant RAM savings for the user and the provider, performance increases and lower usage latency, all while retaining full functionality. UEFI and/or QEMU will still be used secondarily, where applicable. A Debian 12 distribution has reportedly reduced from 190-220MB to only 68-85MB on-system without forfeiting systemd, OpenSSH or essential packages.
+We introduce Hardware Profiles in a different approach as to other panels, in order to place commercial packages directly in their respective configuration profiles, and automatically provision them in the most efficient way possible according to the tooling required by the hypervisor system, without any need for updates. Pre-compatible with the highest versioning from our virtualization platforms.
 
-- Support for DHCPv4, DHCPv6, Port Isolation, NIC management, SR-IOV, and automatic configuration of v4 and v6 networks without the need to edit files; pre- and post-start scripts are compatible in a simplified structure under Provisioners. Network profiler for automatic provisioning of dual-interface VPS/Server solutions and automatic provisioning/changes on NAT rules and HAProxy, including a new button, "Flush NAT", when a customer gets without NAT access due to conntrack retaining an active connection. 
+For the first time at C-Servers: Cloud Hypervisor (CHV/KVM) with microVM and Direct Linux Booting (no UEFI/BIOS) is implemented with KVM on major Linux distributions. Advantages include 200ms booting, significant RAM savings for the user and the provider, performance increases and lower usage latency, all while retaining full KVM functionality. A Debian 13 distribution has reportedly reduced from 220MB to only 85MB on-system without forfeiting systemd, OpenSSH or essential packages. This is all provided by Cloud Hypervisor but also our own optimization measures. 
 
-- Support for live and semi-live migrations, with almost no downtime (15 + 15 seconds), with automatic removal and replacement of NAT IPs.
+Legacy VirtFusion users will stay automatically at QEMU/KVM on their original install without any intervention needed, until they choose to reinstall any operating system. However, it is very much recommended for existing customers to reinstall their systems, because of the added performance and RAM savings.
+Networking support for DHCPv4, DHCPv6, Port Isolation, NIC management, SR-IOV, and automatic configuration of v4 and v6 networks without the need to edit any files, in Libvirt NAT, Linux Bridges and MacVTap; pre- and post-start scripts are compatible in a simplified structure under Provisioners. Network profiler for automatic provisioning of dual-interface VPS/Server solutions and automatic provisioning/changes on NAT rules and HAProxy. This includes a new button, "Flush NAT", when a customer gets without NAT access due to conntrack retaining an active connection - a previous bug detected on VirtFusion we're addressing on this new panel following user feedback.
 
-- Support for High Availability and Latency-Sensitive features in controlled VMs: services maintained by the Client in two or more distinct locations can be replicated for automatic failover and are extremely easy to activate. Ideal for situations where a service simply cannot fail.
+Support for live and semi-live migrations, with almost no downtime (15 + 15 seconds), with automatic management of IPs and removal + replacement of NAT IPs. The time of having 5-10 minutes of downtime due to server migrations is over.
 
-- Options for remote storage systems such as S3, NFS, SSH, rclone and SFTP, and real-time backup management with system-specific format and automatic encryption. Introduction of a two-tiered backup system: customizable "hot backups" in lz4/zstd/gzip, and automatically converted "cold backups" for maximum resource savings by the Provider in lzma2. Decompression is faster than compression.
+Support for High Availability and Latency-Sensitive features in controlled VMs: services maintained by the Client in two or more distinct locations can be replicated for automatic failover (internal feature). 
 
-- Launch of the "Observability" area: a one-stop shop for all inter-dedicated server and inter-VM data.
+Options for local and remote storage systems such as NFS, SSH, rclone and SFTP, and real-time backup management with system-specific format and automatic encryption. Introduction of a two-tiered backup system: customizable "hot backups" in lz4/zstd/gzip, and automatically post-converted "cold backups" for maximum resource savings by the Provider in lzma2. Decompression is faster than compression.
 
-- Simplification of the Hourly Billing area to simple inter-API communication, virtual hourly management, and accurate fund calculation inspired by SolusVM 2.
+Launch of the "Observability" area: a one-stop shop for all inter-dedicated server and inter-VM data.
 
-- Complementary client management for dedicated servers (via APIs from major manufacturers), clients for semi-dedicated or carry-over (hybrid system), and for containers (Firecracker/microVM).
+Simplification of the Hourly Billing area to simple inter-API communication, virtual hourly management, and accurate fund calculation, inspired by SolusVM 2.
 
-- Complementary customer management in Reseller format, a new transaction category, whether through direct sales + mapping of the C-Servers product, or through sales on a dedicated website in WHMCS and Blesta with in-store interaction with the VM by the Client, on VPS/VDS and dedicated servers. Development of an API reseller for prepaid and postpaid systems and for VM communication. One of the industry's first 360º systems with hosting + reselling for virtual + dedicated.
+For the first time at C-Servers, dedicated server management is now directly supported on a Server Management Platform: we implement Redfish and general IPMI/API communication on pre-Redfish servers via API from major manufacturers, including Dell, HP and Supermicro. Autonomous client management will be available in dedicated and semi-dedicated servers.
 
-- Uptime page directly on-platform without any need to use a separate solution, internally and externally (for customers).
+For the first time at C-Servers, dedicated customer management in Reseller format is now supported, a new transaction category, whether through direct sales + mapping of the C-Servers product, or through sales on a dedicated website in provided modules for WHMCS and Blesta with in-store interaction with the VM by the Client, on VPS/VDS and dedicated servers. Development of a direct API reseller for prepaid and postpaid systems and for VM communication. One of the industry's first 360º systems with hosting + reselling for virtual + dedicated.
 
-- Translated in 8 languages: English, Portuguese (Brazil), Portuguese (Portugal), Spanish, French, German, Chinese and Arabic.
+Uptime page directly on-platform without any need to use a separate solution, internally and externally (for customers).
 
-- Full support for BGP announcements, IP Transit and Tunneling on VPS and Dedicated Servers.
+Translated in 8 languages: English, Portuguese (Brazil), Portuguese (Portugal), Spanish, French, German, Chinese and Arabic.
 
-- Security measurement for the customer and easy customer onboarding.
+Full support for BGP announcements, IP Transit and Tunneling on VPS and Dedicated Servers.
 
-- Easily replicable across multiple systems to avoid platform downtime for the Client, on all fronts.
+Security measurement for the customer and easy customer onboarding.
 
-- One-stop shop for updates hypervisor-wise and control-wise, including on the EagleKey code, with a dedicated mechanism that aggregates the RELEASE versioning and the dnf/apt package managers.
+Easily replicable across multiple systems to avoid platform downtime for the Client, on all fronts.
 
 # Current Status
 Phases 0-9 completed; Phase 10 in progress. Total rounds of security hardening completed: 15, including pentests, code inspection and fixing.
