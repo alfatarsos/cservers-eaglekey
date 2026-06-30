@@ -136,3 +136,5 @@ Total rounds of security hardening completed: 17, including pentests, code inspe
 Development Tools: Claude Fable 5 / Opus 4.8 / Sonnet 4.6 (60%); Cursor Composer 2.5 (30%); ChatGPT 5.5 / Codex 5.3 (10%). Total lines: 140.000 (Control + Agent).
 
 Total development time (Code-to-Stable): 23 days, 16h/day (368 hours). Total development time (Code + Project Planning): 41 days (400 hours).
+
+Total project usage of tokens, converted to USD, pre-subsidies: 6.756,70 USD.
