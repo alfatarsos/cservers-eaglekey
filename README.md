@@ -130,13 +130,19 @@ The entire system, from Control Server to Hypervisors, is designed to be as mono
 
 # Current Status, Development Tools and Versioning
 Launched in-production as of June 27th, 2026, at version 1.3.0 (agent + control), and declared Stable.
+
 Updated with some in-flight adjustments on June 30th, 2026, to version 2.0.0, and declared Stable.
 
 Total rounds of security hardening completed: 17, including pentests, code inspection and multiple fixing rounds.
+
 Total number of counted operational functions: 200+
+
 Parity with VirtFusion-counted functions: 80%
 
 Development Tools: Claude Fable 5 / Opus 4.8 / Sonnet 4.6 (60%); Cursor Composer 2.5 (30%); ChatGPT 5.5 / Codex 5.3 (10%).
+
 Total lines: 140.000 (Control + Agent).
+
 Total development time (Code-to-Stable): 23 days, 16h/day (368 hours)
+
 Total development time (Code + Project Planning): 41 days (400 hours).
