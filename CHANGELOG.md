@@ -5,6 +5,7 @@ v2.0.1-v2.0.18
 - Fixes a IPv4 NAT provisioning error on QEMU-to-CHV where IPv4 NAT IP was not being passed on in some isolated use-cases
 - Fixes read-ahead for an issue between PrimaryIpv4 and ip_addresses incorrectly failing to provision the remaining isolated use-cases
 - Fixes GC mode for .NET engine from Server to Workstation (GUI Admin/Staff/Client Area): was becoming less stable every 12-16 hours due to thrashing
+- Fixes 3 minor race conditions that caused one-off errors due to concurrent activities (on reinstall and NAT management)
 - Fixes inconsistency on reinstall GUI showdown and network provisioning by including one last step that awaits for cloud-init and the VM to post OK
 - Fixes IPv6 Route Block to provide a /126 under natbr0 and not MacVTap on newer CHV and QEMU-to-CHV reinstalls through proxying+NDP
 - Fixes Flush NAT button not allowing NAT to be flushed on non-DHCP servers
