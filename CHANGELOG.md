@@ -22,8 +22,8 @@ v2.0.1-v2.0.18
 - Fixes incorrect servers for iperf3 benchmarks and creates a new function where the server can be specified
 - Fixes an incorrect transient state post-migration where VMs were posted to .../eaglekey/vms instead of the correct VM dedicated pool, corrected and VMs migrated to the correct pool (5 new VMs affected)
 - Introduces a 6th screen on deployment of new hypervisors allowing for auto datastore detection or manual
-- Introduces Free Page Reporting as active on all hypervisors under KVM » significant improvements on RAM handling, CPU performance and I/O performance (Linux defaulted to Disabled)
-- Introduces KVM auto-deflate on QEMU and CHV domains active by default (Linux defaulted to Disabled)
+- Introduces Free Page Reporting as active on all hypervisors under KVM » significant improvements on RAM handling, CPU performance and I/O performance 
+- Introduces KVM auto-deflate on QEMU and CHV domains active by default 
 - Allows ksmtuned (if applicable) to use Smart Agent (introduced on Linux 6.7)
 - Changes fallback zram lz4 (if applicable and used) to use vm.page-cluster=0 instead of =3 » significant improvements on RAM latency and IOPS by default
 - Fixes a severe balooning issue caused by Cursor on June 14th writing where virsh setmem, if defined, was defined to actually preset all RAM at all VMs to the balooning amount and not to the present RAM minus the balooning amount, which would have caused all VMs to stall. Corrected to define balloning accordingly.
