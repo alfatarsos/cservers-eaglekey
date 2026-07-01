@@ -7,7 +7,7 @@ v2.0.1-v2.0.18
 - Fixes GC mode for .NET engine from Server to Workstation (GUI Admin/Staff/Client Area): was becoming less stable every 12-16 hours due to thrashing
 - Fixes 3 minor race conditions that caused one-off errors due to concurrent activities (on reinstall and NAT management)
 - Fixes inconsistency on reinstall GUI showdown and network provisioning by including one last step that awaits for cloud-init and the VM to post OK
-- Fixes IPv6 Route Block to provide a /126 under natbr0 and not MacVTap on newer CHV and QEMU-to-CHV reinstalls through proxying+NDP
+- Fixes IPv6 Route Block to provide a /126 under natbr0 and not MacVTap on select newer CHV and QEMU-to-CHV reinstalls through proxying+NDP, whenever there's only one /64 IPv6 available
 - Fixes Flush NAT button not allowing NAT to be flushed on non-DHCP servers
 - Fixes a major bug where transient middle-of-the road states between QEMU and CHV left servers SSH-reachable, but did not provide VNC or Console access, due to libvirt leftovers. Now maps correctly Name or UUID and redirects to the next active domain (QEMU or CHV) » fix is QEMU-to-CHV and CHV-to-QEMU safe
 - Fixes reinstall inconsistent failures on QEMU-to-CHV leaving the VM in an unusable state without domain at QEMU or CHV, now pre-validates status availability upon reinstall and executes rollback to the prior state on QEMU or CHV if necessary.
