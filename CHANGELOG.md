@@ -1,6 +1,6 @@
 List of versions and their changes at C-Servers EagleKey.
 
-v2.0.1-v2.0.18
+v2.0.1-v2.0.20
 - Bug correction flash round versioning publicly available (July 1st, 2026)
 - Fixes a IPv4 NAT provisioning error on QEMU-to-CHV where IPv4 NAT IP was not being passed on in some isolated use-cases
 - Fixes read-ahead for an issue between PrimaryIpv4 and ip_addresses incorrectly failing to provision the remaining isolated use-cases
@@ -9,6 +9,7 @@ v2.0.1-v2.0.18
 - Fixes inconsistency on reinstall GUI showdown and network provisioning by including one last step that awaits for cloud-init and the VM to post OK
 - Fixes IPv6 Route Block to provide a /126 under natbr0 and not MacVTap only for hypervisors where IPv6 RB is used, on newer CHV and QEMU-to-CHV reinstalls through proxying+NDP at these hypervisors only, whenever there's only one /64 IPv6 available
 - Fixes Flush NAT button not allowing NAT to be flushed on non-DHCP servers
+- Fixes incorrect MTUs on the previous VirtFusion setup at some servers and defines default at 1500 with TCP MSS Clamp and PM; now also customizable
 - Fixes a major bug where transient middle-of-the road states between QEMU and CHV left servers SSH-reachable, but did not provide VNC or Console access, due to libvirt leftovers. Now maps correctly Name or UUID and redirects to the next active domain (QEMU or CHV) » fix is QEMU-to-CHV and CHV-to-QEMU safe
 - Fixes reinstall inconsistent failures on QEMU-to-CHV leaving the VM in an unusable state without domain at QEMU or CHV, now pre-validates status availability upon reinstall and executes rollback to the prior state on QEMU or CHV if necessary.
 - Fixes permission errors blocking reinstall and creates an agent that continuously verifies, and if necessary rechanges, directory and file permissions, so that the issues don't happen again
