@@ -1,5 +1,11 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v2.0.21-v2.0.22
+- Bug correction flash round versioning publicly available (July 2nd, 2026)
+- Fixes IPv6 display on the panel and shows it adequately in accordance with the existing IPv6 IPs
+- Fixes IPv6 deployment: previous VF-migrated customers have non-DHCP provided fixed IPv6 IPs, these are respected and maintained with connectivity; upon reinstall, fixed IPv6 /64 and /126 IPs are now provided by default with RA, SLAAC, DHCPv6 and EUI-64 automatically, in accordance with the most recent sector practices, and displayed correctly on the platform. EagleKey is now the most IPv6-compliant panel on the market.
+- Fixes a minor synchronization IP bug on the database (affecting only 4 VMs) following the many networking changes done and resets parity permanently from now on.
+
 v2.0.1-v2.0.20
 - Bug correction flash round versioning publicly available (July 1st, 2026)
 - Fixes a IPv4 NAT provisioning error on QEMU-to-CHV where IPv4 NAT IP was not being passed on in some isolated use-cases
