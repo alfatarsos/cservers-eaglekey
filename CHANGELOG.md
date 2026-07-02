@@ -5,7 +5,7 @@ v2.0.21-v2.0.27
 - Fixes IPv6 display on the panel and shows it adequately in accordance with the existing IPv6 IPs
 - Fixes IPv6 deployment: previous VF-migrated customers have non-DHCP provided fixed IPv6 IPs, these are respected and maintained with connectivity; upon reinstall, fixed IPv6 IPs are now provided by default with RA, SLAAC and EUI-64 automatically, in accordance with the most recent sector practices, and displayed correctly on the platform. EagleKey is now the most IPv6-compliant panel on the market.
 - Fixes a minor display synchronization IP bug on the database (affecting only 4 VMs) following the many networking changes done and resets parity permanently from now on.
-- Fixes something that is not EagleKey's responsibility: Ubuntu 26.04 LTS, 24.04 LTS and 22.04 LTS default to allowing only public keys and not passwords. We have corrected that behaviour on the template, and now allows password + public keys. Debian 12/13 were also checked.
+- Fixes something that is not EagleKey's responsibility: Ubuntu 26.04 LTS, 24.04 LTS and 22.04 LTS default to allowing only public keys and not passwords. We have corrected that behaviour on the template, and now allows password + public keys. Debian 12/13 and other systems were also checked preventively.
 - Improves ISO handling on QEMU/KVM systems.
 - Fixes Windows Server IPv6 deployments that were briefly providing a random address before the final one was provided.
 - Fixes IPv4 NAT registration fallbacks on Windows Server over IPv4 to always behave as intended.
