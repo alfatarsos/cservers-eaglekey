@@ -1,5 +1,21 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v2.0.28-v2.0.29
+- Minor remaining bugs' flash round (July 3rd, 2026)
+- Fixes a minor provisioning location error where only 3 packages were registering as "None" instead of the correct location.
+- Fixes two observed memory leaks regarding metrics management on the control-VictoriaMetrics communication. Ensures that no further memory leaks exist. The panel is now fully RAM-stable. 
+- Fixes rDNS, allowing Manual, Bunny.net or PowerDNS, and migrates rDNS records previously registered at VF. No downtime was incurred. rDNS is now fully operational.
+- Fixes all HAProxy-detected issues and migrates domains from the previous table to a new table. No downtime was incurred on 99.6% of the existing websites. HAProxy is now fully operational. 
+- Fixes a CPU Abuse automation error where recurrence of abuses wasn't displaying correctly on GUI and did not increase suspension periods as recurrences ocurred.
+- Fixes a CPU Abuse display bug where history of suspensions was not displaying correctly and was at another section
+- Introduces CPU Abuse per-plan percentage granularity with optional overrides of the global CPU setting for CPU Abuse, re-tested to ensure it works accordingly. Previously only a Global value existed.
+- Fixes a Observability display bug where, under Benchmarks, Disk tests history were appearing at Network.
+- Fixes a minor bug seen on 1 user regarding two IPv6 IP addresses appearing - the condition was not reproducible, this was after migration, but it's sorted out.
+- Introduces per-plan fallback location mapping that covers the "None" settings on the WiseCP module for location/servers, preventing allocation to different servers than the ones intended by direct allocation
+- Fixes a rare bug seen where 5 VMs got "Awaiting Setup" status but were actually working and accessible, which only occurred when deployments / panel refreshes coincided with reinstalls. A guardrail now exists that looks for servers on these status and conveniently completes any pending reinstalls or panel reconcilliations.
+- Fixes a condition where migrating from a SSH Linux/BSD system to a Windows system didn't change the ports and the port forwarding from SSH to RDP, and another one on 1st install that deployed Windows VMs with SSH instead of RDP. 
+- Fixes a minor bug where the Benchmark section (Admin area) shows only 1 iperf3 server to test manually instead of the full available listing, and where iperf3 execution to external servers (for Network Abuse evaluation) fails with a signal or an empty string. *
+
 v2.0.21-v2.0.27
 - Bug correction flash round versioning publicly available (July 2nd, 2026)
 - Fixes IPv6 display on the panel and shows it adequately in accordance with the existing IPv6 IPs
