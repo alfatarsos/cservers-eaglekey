@@ -1,7 +1,7 @@
 List of versions and their changes at C-Servers EagleKey.
 
 v2.0.28-v2.0.29
-- Minor remaining bugs' flash round (July 3rd, 2026)
+- Minor remaining bugs' flash round (July 3rd and 4th, 2026)
 - Fixes a minor provisioning location error where only 3 packages were registering as "None" instead of the correct location.
 - Fixes two observed memory leaks regarding metrics management on the control-VictoriaMetrics communication. Ensures that no further memory leaks exist. The panel is now fully RAM-stable. 
 - Fixes rDNS, allowing Manual, Bunny.net or PowerDNS, and migrates rDNS records previously registered at VF. No downtime was incurred. rDNS is now fully operational.
