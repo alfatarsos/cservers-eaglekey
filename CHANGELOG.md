@@ -57,7 +57,7 @@ v2.0.1-v2.0.20
 - Fixes balooning and observability areas where a JWT or hv_id error was posting to EK, now working correctly
 - Introduces asynchronous provisioning and asynchronous suspension with Name or UUID read to account for QEMU and CHV VM's
 - Introduces a Console button on the WiseCP EK module
-- Fixes a relevant bug where VMs without any server ID or user ID would post the first VM on the list, of a third-party real customer, though unmanageable. Now returns N/A or the correct VM
+- Fixes a relevant bug where VM product (billing) without any server ID or user ID would default to post the first VM on the list, of a third-party real customer, though unmanageable. Now returns N/A or the correct VM.
 - Fixes minor remaining MASQUERADE rules from VirtFusion (0.1%) that were still using iptables and not nftables
 - Introduces improvements to reinstall handling that significantly increase reliability for the end-customer
 - Introduces Windows Server templates with windows-modern hardware profile for 2019, 2022 and 2025
