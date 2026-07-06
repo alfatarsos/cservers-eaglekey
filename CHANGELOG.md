@@ -1,5 +1,20 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v2.0.30-v2.0.32
+- Minor remaining bugs' flash round and improvements round(July 6th, 2026)
+- Fixes a punctual login issue caused due to a minor call on 1 of the changes inserted on the previous round
+- Fixes a clipboard inconsistent issue that happenned on Firefox and Safari; on Chrome this issue only happenned if the window wasn't focused
+- Fixes a suspension issue at the WiseCP module where suspensions were not being launched with an error code or with a JSON message
+- Fixes an upgrade issue where upgraded packages were not reflecting the specifications automatically on a VPS system
+- Fixes an incorrect behaviour where some CHV VM's were cosmetically having the network named on GUI as "default" instead of the correct interface (at Admin Area)
+- Introduces full CHV migration between dedicated servers
+- Introduces a abusecore section that handles CPU, Network and Disk abuses in one place
+- Introduces multithreading to iperf3 for 10/25/40 Gbps servers
+- Introduces a second long-poll tiered CPU Abuse reading, where inconsistent usage seen as over the limit, on a longer analyzed period of time, also triggers escalations, which improves accuracy.
+- Introduces a circuit conversion on IDbContextFactory to further improve efficiency
+- Introduces sync-over-async to improve reliability
+- Introduces specialized configurations for legacy systems for Windows and Linux (pre-2004), including 60fps Game Mode, sound-on-browser, USB/SCSI peripheral utilization, on-sync multiplayer controls, with ultra low latency, for a specialized product.
+
 v2.0.28-v2.0.29
 - Minor remaining bugs' flash round (July 3rd and 4th, 2026)
 - Fixes a minor provisioning location error where only 3 packages were registering as "None" instead of the correct location.
