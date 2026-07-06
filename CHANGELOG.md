@@ -1,7 +1,7 @@
 List of versions and their changes at C-Servers EagleKey.
 
 v2.0.30-v2.0.32
-- Minor remaining bugs' flash round and improvements round(July 6th, 2026)
+- Minor remaining bugs' flash round and improvements round (July 6th, 2026)
 - Fixes a punctual login issue caused due to a minor call on 1 of the changes inserted on the previous round
 - Fixes a clipboard inconsistent issue that happenned on Firefox and Safari; on Chrome this issue only happenned if the window wasn't focused
 - Fixes a suspension issue at the WiseCP module where suspensions were not being launched with an error code or with a JSON message
