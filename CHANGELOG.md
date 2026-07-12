@@ -1,5 +1,16 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v2.0.37-v2.1.6
+- Feature improvement, minor version bump, and minor bug fixing round (July 12th, 2026)
+- Fixes some minor and specific translations in non-English or non-Portuguese languages on the Admin Area
+- Fixes a RAM cosmetic presentation bug that affected sub-1GB RAM packages, and non-rounded packages, on the Admin Area and the Client Area
+- Fixes a bug on the Admin Area with Console presentation on CHV, and the fallback to virsh on some edge cases at the Client Area (not noticed by the customer)
+- Fixes IPv4 NAT cosmetic counting on internal blocks
+- Fixes a minor bug on the Mailout where a VM that was already suspended prior to mail-sending did not count as a valid recipient, it now counts
+- Implements CLI DR (Disaster Recovery)
+- Implements improvements to the CPU Abuse and Network Abuse mechanisms, improving classification
+- Implements improvements to the Backup Manager
+
 v2.0.30-v2.0.37
 - Minor remaining bugs' flash round and improvements round (July 6th, 2026)
 - Fixes a punctual login issue caused due to a minor call on 1 of the changes inserted on the previous round
