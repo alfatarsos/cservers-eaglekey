@@ -1,6 +1,6 @@
 List of versions and their changes at C-Servers EagleKey.
 
-v2.0.37-v2.1.6
+v2.1.0-v2.1.6
 - Feature improvement, minor version bump, and minor bug fixing round (July 12th, 2026)
 - Fixes some minor and specific translations in non-English or non-Portuguese languages on the Admin Area
 - Fixes a RAM cosmetic presentation bug that affected sub-1GB RAM packages, and non-rounded packages, on the Admin Area and the Client Area
