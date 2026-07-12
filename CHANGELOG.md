@@ -4,7 +4,7 @@ v2.1.0-v2.1.6
 - Feature improvement, minor version bump, and minor bug fixing round (July 12th, 2026)
 - Fixes some minor and specific translations in non-English or non-Portuguese languages on the Admin Area
 - Fixes a RAM cosmetic presentation bug that affected sub-1GB RAM packages, and non-rounded packages, on the Admin Area and the Client Area
-- Fixes a bug on the Admin Area with Console presentation cutting midway on CHV, and the fallback to virsh on some edge cases at the Client Area (not noticed by the customer)
+- Fixes a bug on the Admin Area with Console presentation cutting mid-way on CHV, and the fallback to virsh on some edge cases at the Client Area (not noticed by the customer)
 - Fixes IPv4 NAT cosmetic counting on internal blocks
 - Fixes a minor bug on the Mailout where a VM that was already suspended prior to mail-sending did not count as a valid recipient, it now counts
 - Implements CLI DR (Disaster Recovery)
