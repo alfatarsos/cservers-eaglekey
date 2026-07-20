@@ -4,7 +4,7 @@ v2.1.6-v2.2.17
 - Feature improvement, minor version bump and several minor bug fixing rounds (July 13th to 20th, 2026)
 - Reimplements the Admin Area fix for serial console access (post-restart regression now fixed)
 - Fixes a login issue that ocasionally happenned where the Portal would still be up but logins weren't available
-- Improvements to RAM consumption on the system
+- Improvements to RAM consumption on the control system (logging behaviour changed)
 - Introduces --pvpanic to generate kernel panic restarts on QEMU and CHV; later temporarily removed on CHV due to technical issues and adjusted on QEMU to change the kernel panic device detector from a ISA to a PCI-E device
 - Fixes CHV permission issues seen on some reinstalls, post-implementation of the kernel panic device (regression fixed)
 - Improves e-mail warnings regarding server networking abuse by including distinction between outgoing and incoming (dispensing further verification), showing hits per 45 seconds instead of global for every 12 hours (digest still every 12h)
