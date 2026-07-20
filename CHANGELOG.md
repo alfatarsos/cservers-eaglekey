@@ -1,5 +1,19 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v2.1.6-v2.2.17
+- Feature improvement, minor version bump and several minor bug fixing rounds (July 13th to 20th, 2026)
+- Reimplements the Admin Area fix for serial console access
+- Fixes a login issue that ocasionally happenned where the Portal would still be up but logins weren't available
+- Introduces --pvpanic to generate kernel panic restarts on QEMU and CHV; later temporarily removed on CHV due to technical issues and adjusted on QEMU to change the kernel panic device detector from a ISA to a PCI-E device
+- Fixes CHV permission issues seen on some reinstalls, post-implementation of the kernel panic device (regression fixed)
+- Improves e-mail warnings regarding server networking abuse by including distinction between outgoing and incoming (dispensing further verification), showing hits per 45 seconds instead of global for every 12 hours (digest still every 12h)
+- Improves serialization of provisioning, suspension and deletion and multi-threading on those actions, to make them more reliable
+- Fixes an introduced bug where a resource abuse suspended customer could still contour that suspension by merely clicking on Start or Restart, now power actions are locked at the panel level
+- Introduces FloodGuard: a directly made rate limit for port scanning, dynamic on speed, activated/deactivated on a per-plan, per-VM and per-server basis, automatically imposed and automatically raised, which doesn't substitute terminations for port scanning but rather very much improves responsivity for these issues and cuts the abuser more proactively,
+- Introduces prohibiting IP spoofing on the system (a feature that previously existed on SolusVM 2 and essential on NAT environments).
+- Introduces an automatic system guard that detects failures of the Portal and then restarts it in full automatically, ending downtimes for that reason and improving stability
+- Improves suspension reliability
+
 v2.1.0-v2.1.6
 - Feature improvement, minor version bump, and minor bug fixing round (July 12th, 2026)
 - Fixes some minor and specific translations in non-English or non-Portuguese languages on the Admin Area
