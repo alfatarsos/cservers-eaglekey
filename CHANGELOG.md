@@ -10,7 +10,7 @@ v2.1.6-v2.2.17
 - Improves e-mail warnings regarding server networking abuse by including distinction between outgoing and incoming (dispensing further verification), showing hits per 45 seconds instead of global for every 12 hours (digest still every 12h)
 - Improves serialization of provisioning, suspension and deletion and multi-threading on those actions, to make them more reliable
 - Fixes an introduced bug where a resource abuse suspended customer could still contour that suspension by merely clicking on Start or Restart, now power actions are locked at the panel level
-- Introduces FloodGuard: a directly made rate limit for port scanning, dynamic on speed, activated/deactivated on a per-plan, per-VM and per-server basis, automatically imposed and automatically raised, which doesn't substitute terminations for port scanning but rather very much improves responsivity for these issues and cuts the abuser more proactively,
+- Introduces FloodGuard: a directly made rate limit for port scanning, dynamic on speed, activated/deactivated on a per-plan, per-VM and per-server basis, automatically imposed and automatically raised, always informed via e-mail to the sysadmins, which doesn't substitute terminations for port scanning but rather very much improves responsivity for these issues and cuts the abuser more proactively,
 - Introduces prohibiting IP spoofing on the system (a feature that previously existed on SolusVM 2 and essential on NAT environments).
 - Introduces an automatic system guard that detects failures of the Portal and then restarts it in full automatically, ending downtimes for that reason and improving stability
 - Improves suspension reliability
