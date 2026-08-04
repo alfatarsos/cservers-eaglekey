@@ -1,5 +1,15 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v2.2.17-v2.2.26
+- Bug fixing roundup (July 21st to August 1st, 2026)
+- Fixes some backup issues related to manual backups and logins to the backup node that prevented adequate backup execution
+- Fixes a bug on EL10 installs where QEMU and libvirt agents weren't updated to reflect EL10 differences, and introduces bridging naming to the several internal tools at Libvirt for parity with Debian
+- Fixes a resizing issue on CHV servers at the Admin Area, including package changes
+- Fixes a bug at Status where removing more than 1 warning would crash the panel
+- Introduces some underlying differences regarding full IPv4 servicing subnets and not only NAT ones
+- Fixes definitively the inconsistency of states between QEMU and CHV migrations, that still occurred with 1% of the VM installs, with a watchdog that applies predefined and validated rules to always show the correct variant according to the OS and the version (QEMU or CHV) at any given moment
+- General E2E tests for continuous validation and other minor adjustments
+
 v2.1.6-v2.2.17
 - Feature improvement, minor version bump and several minor bug fixing rounds (July 13th to 20th, 2026)
 - Reimplements the Admin Area fix for serial console access (post-restart regression now fixed)
