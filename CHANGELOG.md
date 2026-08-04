@@ -7,6 +7,8 @@ v2.2.17-v2.2.26
 - Fixes a resizing issue on CHV servers at the Admin Area, including package changes
 - Fixes a bug at Status where removing more than 1 warning would crash the panel
 - Introduces some underlying differences regarding full IPv4 servicing subnets and not only NAT ones
+- Introduces more verbose errors regarding migrations on CHV and QEMU for adjustment
+- Fixes 3 bugs related to internal DR (Disaster Recovery) upon reprovisioning of a new server when occurring on a different system (EL10 vs Debian-based)
 - Fixes definitively the inconsistency of states between QEMU and CHV migrations, that still occurred with 1% of the VM installs, with a watchdog that applies predefined and validated rules to always show the correct variant according to the OS and the version (QEMU or CHV) at any given moment
 - General E2E tests for continuous validation and other minor adjustments
 
