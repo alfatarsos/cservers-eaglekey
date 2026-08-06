@@ -1,5 +1,12 @@
 List of versions and their changes at C-Servers EagleKey.
 
+<b> v3.0 </b>
+- Major Version Launch - August 6th, 2026
+- More than 140 minor remaining bugs fixed and more than 60 adjustments/improvements done
+- Improvements on Backup execution and display
+- New professionally designed logo
+- General performance improvements
+
 v2.2.17-v2.2.26
 - Bug fixing roundup (July 21st to August 1st, 2026)
 - Fixes some backup issues related to manual backups and logins to the backup node that prevented adequate backup execution
