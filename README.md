@@ -127,12 +127,14 @@ The entire system, from Control Server to Hypervisors, is designed to be as mono
 - Easily replicable across multiple systems via Nginx and PostgreSQL to avoid platform downtime for the Client, on all fronts.
 
 # Current Status, Development Tools and Versioning
-Launched in-production as of June 27th, 2026, at version 1.3.0 (agent + control), and declared Stable. Updated with some in-flight adjustments on June 30th, 2026, to version 2.0.0, and declared Stable.
+Launched in-production as of June 27th, 2026, at version 1.3.0 (agent + control), and declared Stable. 
 
-Total rounds of security hardening completed: 17, including pentests, code inspection and multiple fixing rounds. Total number of counted operational functions: 200+. Parity with VirtFusion-counted functions: 80%.
+As of 06-08-2026, EagleKey has a redesigned logo and it's now at version 3.0.0 (agent + control), declared Stable
 
-Development Tools: Claude Fable 5 / Opus 4.8 / Sonnet 4.6 (60%); Cursor Composer 2.5 (30%); ChatGPT 5.5 / Codex 5.3 (10%). Total lines: 140.000 (Control + Agent).
+Total rounds of security hardening completed: 21, including pentests, code inspection and multiple fixing rounds. Total number of counted operational functions: 200+. Parity with VirtFusion-counted functions: 85%.
 
-Total development time (Code-to-Production): 23 days, 16h/day (368 hours). Total development time (Code + Project Planning): 41 days (400 hours).
+Development Tools: Claude Fable 5 / Opus 4.8 / Sonnet 4.6 (50%); Cursor Composer 2.5 (30%); ChatGPT 5.6 Sol / 5.5 / Codex 5.3 (20%). Total lines: 160.000 (Control + Agent).
 
-Total project usage of tokens, converted to USD, pre-subsidies: 6.756,70 USD.
+Total development time (Code-to-Production): 23 days, 16h/day (368 hours). Total development time (Code + Project Planning): 41 days (400 hours) (metrics for 1.3.0)
+
+Total project usage of tokens, converted to USD, pre-subsidies: 6.756,70 USD (metrics for 1.3.0).
