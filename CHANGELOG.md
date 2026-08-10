@@ -1,5 +1,13 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v3.1.0
+- Minor Version Launch - August 10th, 2026
+- Strongly improves and tests direct migrations for full reliability, correcting the in-flight GUI system and ensuring the
+- Fixes a nftables syntax bug reported on the Support area
+- Fixes a minor one-off reinstall lock bug reported on the Support area
+- Removes the "Suspend" button from the Lite version of EagleKey for parity with the primary version
+- Performance, reliability and responsitivity improvements on the called functions and the general interface at the Admin and Client areas.
+
 v3.0.1-v3.0.2
 - Bug fixing and improvements roundup - August 8th-10th, 2026
 - Fixes an inconsistent lock that occurred to some automated VM backups over restic
