@@ -4,7 +4,7 @@ v3.0.1-v3.0.2
 - Bug fixing and improvements roundup - August 8th-10th, 2026
 - Fixes an inconsistent lock that occurred to some VM backups over restic
 - Adds to the EagleKey module at the billing system automatic provisioning tested E2E of add-ons for CPU, RAM, HDD, traffic and IPs 
-- Fixes an inconsistent state that occurred on the billing system in direct communication with EagleKey - the VM would still be cancelled or suspended, but the correct feedback would not arrive in time
+- Fixes an inconsistent state that occurred on the billing system in direct communication with EagleKey - the VM would still be cancelled or suspended, but the correct feedback would not arrive in time. This doesn't ever happen now.
 - General significant performance improvements with deserialization, splitting and lower statistical request polling to VictoriaMetrics
 - Changes the Disk Abuse mechanism from calculation over a regular speed, to a anomaly-based detection that partially borrows from CPU Abuse mechanisms, significantly improving reliability at detection and suspensions by direct I/O measurement
 - Fluidity and design improvements on the interface at the Admin and Client areas
