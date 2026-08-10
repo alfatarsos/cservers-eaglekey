@@ -129,7 +129,7 @@ The entire system, from Control Server to Hypervisors, is designed to be as mono
 # Current Status, Development Tools and Versioning
 Launched in-production as of June 27th, 2026, at version 1.3.0 (agent + control), and declared Stable. 
 
-As of 10-08-2026, EagleKey has a redesigned logo and it's now at version 3.1.0 (agent + control), declared Stable
+As of 10-08-2026, EagleKey has a redesigned logo and it's now at version 3.1.0 (agent + control), declared Stable.
 
 Total rounds of security hardening completed: 21, including pentests, code inspection and multiple fixing rounds. Total number of counted operational functions: 200+. Parity with VirtFusion-counted functions: 85%.
 
