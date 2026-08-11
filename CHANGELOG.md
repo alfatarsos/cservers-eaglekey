@@ -1,7 +1,7 @@
 List of versions and their changes at C-Servers EagleKey.
 
 v3.1.0
-- Minor Version Launch - August 10th, 2026
+- Minor Version Launch - August 11th, 2026
 - Strongly improves and tests direct migrations for full reliability, correcting the in-flight GUI system and ensuring all launched migrations occur successfully.
 - Fixes a nftables syntax bug reported on the Support area
 - Fixes a minor one-off reinstall lock bug reported on the Support area
