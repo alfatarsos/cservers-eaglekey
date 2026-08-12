@@ -1,5 +1,14 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v3.1.1-v3.1.2
+- Bug fixing and improvements roundup - August 12th, 2026
+- Fixes a bug with uppercase letters on e-mails saying that an account was suspended due to a null pointer. 49 users affected but now fixed.
+- Improves per-VM isolation accross the fleet
+- virtio-net and virtio-blk now with multiqueue implemented, with value equal to the number of vCPUs, up to 16
+- Simplification and cleanup of the Admin Area Dashboard presentation and menus
+- Simplification and cleanup of the Client Area presentation to avoid duplicates
+- Fixes a long-standing bug due to PTY buffering on the Admin Area console (CHV-only and intermittent).
+
 v3.1.0
 - Minor Version Launch - August 11th, 2026
 - Strongly improves and tests direct migrations for full reliability, correcting the in-flight GUI system and ensuring all launched migrations occur successfully.
