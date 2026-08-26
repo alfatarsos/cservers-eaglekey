@@ -6,7 +6,7 @@ v3.1.2-v3.1.8
 - Improves handling of dedicated IPv4 IPs and interfaces
 - One-to-many approach : one user reporting an issue needs to be confirmed if the issue is global;
 - Fixes some IPv6 NDP provisioning issues and information reconcilliation issues
-- Introduces for the first time DeepSeek v4 Pro-0813 as a coding agent for deliberately non-Western security counteranalysis, day-to-day help and general coding improvements, including on topics top-tier Western models may struggle.
+- Introduces for the first time DeepSeek v4 Pro-0813 as a coding agent for deliberately non-Western security counteranalysis, punctual adjustments and general coding improvements, including on topics top-tier Western models may struggle.
 
 v3.1.1-v3.1.2
 - Bug fixing and improvements roundup - August 12th, 2026
