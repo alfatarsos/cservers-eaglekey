@@ -1,5 +1,13 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v3.1.2-v3.1.8
+- Bug fixing and improvements roundup - August 14th to August 24th, 2026
+- Fixes 2 permission bugs on CHV
+- Improves handling of dedicated IPv4 IPs and interfaces
+- One-to-many approach : one user reporting an issue needs to be confirmed if the issue is global;
+- Fixes some IPv6 NDP provisioning issues and information reconcilliation issues
+- Introduces for the first time DeepSeek v4 Pro-0813 as a coding agent for deliberately non-Western security counteranalysis, day-to-day help and general coding improvements, including on topics top-tier Western models may struggle.
+
 v3.1.1-v3.1.2
 - Bug fixing and improvements roundup - August 12th, 2026
 - Fixes a bug with uppercase letters on e-mails saying that an account was suspended due to a null pointer. 49 users affected but now fixed.
