@@ -1,5 +1,14 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v3.2.0
+- Bug fixing and improvements roundup - August 27th, 2026 
+- Fixes a very specific flapping bug where a suspended VM could get an error from virsh and leave a VM in an inconsistent state between the Postgre control DB, the server and the system, leaving the VM accessible over SSH but inaccessible on the platform. 
+- Reorganizes the few post-VF migrated still-pending network blocks by hypervisor, leaving them displayed on the Admin area as summarized by default instead of expanded per-hypervisor
+- Introduces a new menu, "Port forwarding", that conveniently lists in one place all active port forwardings on the NAT service
+- Introduces a new menu, "Self Healing", that is directed at sorting out the most frequent errors on this panel and immediately gaining visibility on any future errors that occur. It diagnoses and solves, automatically or manually, any possible errors on 5 fronts (for now): networking, VM reconcile, Backups, Storage and Datastores, and Updates.
+- Error messages and general comments on the code are now entirely written in English; previously one of the builders wrote them in Portuguese, which ultimately caused some of the possible comments or error messages to arrive in Portuguese. This is now fixed, with special attention for front-facing user error messages.
+- General efficiency improvements.
+
 v3.1.2-v3.1.8
 - Bug fixing and improvements roundup - August 14th to August 24th, 2026
 - Fixes 2 permission bugs on CHV
