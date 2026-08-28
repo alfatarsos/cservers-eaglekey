@@ -1,7 +1,7 @@
 List of versions and their changes at C-Servers EagleKey.
 
 v3.2.0
-- Bug fixing and improvements roundup - August 27th, 2026 
+- Minor version launch, including a bug fixing and improvements roundup - August 27th, 2026 
 - Fixes a very specific flapping bug where a suspended VM could get an error from virsh and leave a VM in an inconsistent state between the Postgre control DB, the server and the system, leaving the VM accessible over SSH but inaccessible on the platform. 
 - Reorganizes the few post-VF migrated still-pending network blocks by hypervisor, leaving them displayed on the Admin area as summarized by default instead of expanded per-hypervisor
 - Introduces a new menu, "Port forwarding", that conveniently lists in one place all active port forwardings on the NAT service
