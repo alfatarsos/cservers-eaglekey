@@ -1,5 +1,12 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v3.2.0.1
+- Fast-track improvements - August 27th, 2026
+- Significantly improves RAM consumption of VictoriaMetrics and of the .NET / Blazor Server system. 
+- Improves RAM consumption of the agent, reduces unnecessary static calls.
+- Global reduction of 800MB on RAM consumption - the panel now starts with 1.2GB RAM consumption only. Recommended RAM ballpark now at 3GB + 3GB zRam Swap; disk recommendation now minimum SSD or higher.
+- TBA
+
 v3.2.0
 - Minor version launch, including a bug fixing and improvements roundup - August 27th, 2026 
 - Fixes a very specific flapping bug where a suspended VM could get an error from virsh and leave a VM in an inconsistent state between the Postgre control DB, the server and the system, leaving the VM accessible over SSH but inaccessible on the platform. 
