@@ -5,7 +5,7 @@ v3.2.0.1
 - Significantly improves RAM consumption of VictoriaMetrics and of the .NET / Blazor Server system. 
 - Improves RAM consumption of the agent, reduces unnecessary static calls.
 - Global reduction of 800MB on RAM consumption - the panel now starts with 1.2GB RAM consumption only. Recommended RAM ballpark now at 3GB + 3GB zRam Swap; disk recommendation now minimum SSD or higher.
-- TBA
+- Improvements on IPv6 handling
 
 v3.2.0
 - Minor version launch, including a bug fixing and improvements roundup - August 27th, 2026 
