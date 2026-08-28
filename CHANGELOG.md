@@ -9,7 +9,7 @@ v3.2.0
 - Error messages and general comments on the code are now entirely written in English; previously one of the builders wrote them in Portuguese, which ultimately caused some of the possible comments or error messages to arrive in Portuguese. This is now fixed, with special attention for front-facing user error messages.
 - General efficiency improvements.
 
-v3.1.2-v3.1.8
+v3.1.2-v3.1.5
 - Bug fixing and improvements roundup - August 14th to August 24th, 2026
 - Fixes 2 permission bugs on CHV
 - Improves handling of dedicated IPv4 IPs and interfaces
