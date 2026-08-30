@@ -1,5 +1,18 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v3.3.0 
+- Improvements - August 28th to 30th, 2026
+- Security improvements and code cleanup ahead of dedicated IPv4 launch
+- New "Security" area, encompassing FloodGuard, CPU/disk/network abuse and similar correlated areas
+- New "Safety Center" area, encompassing 22 public lists for IP blacklisting/activity covering all IPv6 and IPv4 addresses, plus a IDS/IPS now embedded into the system (Stratospheric Linux IPS - SLIPS, a ML fine-tuned project existing since 2012 and based in Prague), with direct reporting, classification and log retention, by default on IDS mode. This will help with any immediate adjustments required for any IP usage to ensure cleanliness and ensuring available information is always up to date.
+- Automatic e-mail notifications to all system administrators as soon as any IP of the covered listings is blacklisted
+- New RBAC covered option for staff/customer service agents including these listings.
+- New customized text screen after each deployment or when Internet momentarily failures occur, "The EagleKey Server Portal will return in a few moments...". This should improve the user experience in comparison with Blazor Server's default.
+- NAT ports are now specifically labelled by default and mapped per-VM for convenience.
+- Correlation and overlapping errors on NAT ports permanently fixed and reconciled (2 VM's with same ports - operation unaffected).
+- Agent now does automatic VM reconcilliation between any possible classification drifts of CHV or QEMU on the DB with the corresponding valid signals, as humanly mandated; and code is now improved in tandem to further restrict and avoid these. These don't affect user operation, but DB reliability is essential and further ensured with these changes, improving general system operation.
+- Multiple new E2E tests accross features to ensure more reliability.
+
 v3.2.0.1
 - Fast-track improvements - August 27th, 2026
 - Significantly improves RAM consumption of VictoriaMetrics and of the .NET / Blazor Server system. 
