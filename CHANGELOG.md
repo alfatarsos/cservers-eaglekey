@@ -1,5 +1,16 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v3.3.1-v3.3.8
+- Improvements and bug fixing - August 31st to September 6th, 2026
+- CHV treatment has been improved, including a race condition of 1 second between operations that could cause a reinstall to fail
+- Upgrades the EagleKey Control to better reflect the new reality, with full IPv4s
+- A watcher is now available for tunnels and BGP propagation that continuously ensures these are up, but also accounts if these fail in a loop and reports.
+- Tighter integration between EagleKey and BIRD: a /32 or higher on IPv4 and a /64 or higher on IPv6 can be automatically provisioned from iBGP and ensure connectivity to the ASN. Opens ports to possible future automated BGP downstream announcements provided to users (at present these are manually held).
+- NAT improvements: the 1st port is always published prior to the 1st VM on an hypervisor and SNAT now covers for specific tunneling when the IP used on a NAT service is part of a public tunneled/BGP-communicated range
+- Significant improvements taken at EK on the 1st deployment of a NAT-based, /32 IPv4 and /48 IPv6 system at C-Servers with all IPs using AS214566, Zeta.12 Ashburn, which also uses tunnelled communication between two Ashburn endpoints. Internal configuration at the Ashburn dedicated server ensures fast performance and effectiveness on the first of new configurations and global networking independence. Usually server panels do not account for any tunelling - that happens here, starting from v3.3.7.
+- Triple communication between the WebStore, EagleKey and external API junctions for product management and communication via automatic CLI scripting, which will allow for automatic product updates and stock updates at different sales platforms - major advance.
+- Fixes a pre-reinstall MTU provisioning bug affecting a small portion of users.
+
 v3.3.0 
 - Improvements - August 28th to 30th, 2026
 - Security improvements and code cleanup ahead of dedicated IPv4 launch
