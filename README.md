@@ -131,7 +131,7 @@ Launched in-production as of June 27th, 2026, at version 1.3.0 (agent + control)
 
 As of 17-09-2026, EagleKey has a redesigned logo and it's now at version 3.4.1 (agent + control), declared Stable.
 
-Total rounds of security hardening completed: 22, including pentests, code inspection and multiple fixing rounds. Total number of counted operational functions: 200+. Parity with VirtFusion-counted functions: 85%.
+Total rounds of security hardening completed: 23, including pentests, code inspection and multiple fixing rounds. Total number of counted operational functions: 200+. Parity with VirtFusion-counted functions: 85%.
 
 Development Tools: Claude Fable 5 / Opus 5 and 4.8 / Sonnet 5 and 4.6 (45%); Cursor Composer 2.5 (15%); ChatGPT 5.6 Sol + Luna / 5.5 / Codex 5.3 (30%); DeepSeek v4/v4.1 (10%). Total lines: 160.000 (Control + Agent).
 
