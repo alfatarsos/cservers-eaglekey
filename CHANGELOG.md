@@ -1,5 +1,16 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v3.4.0
+- Improvements, bug fixing and new minor point version round - September 8th to September 17th, 2026
+- More than 40 bugs corrected
+- New "Geolocation" area, reading automatically the status of each IP subnetting range and checking whether it is correctly mapped or diverged, bringing live status to each and every IP range
+- Design revamp of the "Dashboard" area, with a different, simplified presentation model
+- Introduction of keybindings on the Admin panel for quick mappings without any mouse
+- Reinstall reliability improved
+- Backup Restic contention locks improved
+- Improvements to the Reseller activity with the introduction of asynchronous calls, not only synchronous
+- New security audit round
+
 v3.3.1-v3.3.8
 - Improvements and bug fixing - August 31st to September 6th, 2026
 - CHV treatment has been improved, including a race condition of 1 second between operations that could cause a reinstall to fail
