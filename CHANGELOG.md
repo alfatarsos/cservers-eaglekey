@@ -1,6 +1,6 @@
 List of versions and their changes at C-Servers EagleKey.
 
-v3.4.0
+v3.4.0-v3.4.1
 - Improvements, bug fixing and new minor point version round - September 8th to September 17th, 2026
 - More than 40 bugs corrected
 - New "Geolocation" area, reading automatically the status of each IP subnetting range and checking whether it is correctly mapped or diverged, bringing live status to each and every IP range
