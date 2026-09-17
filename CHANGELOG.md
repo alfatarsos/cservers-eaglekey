@@ -10,7 +10,7 @@ v3.4.0
 - Backup Restic contention locks improved
 - Improvements to the Reseller activity with the introduction of asynchronous calls, not only synchronous
 - New security audit round
-- Improves the CPU Abuse mechanism: new 12-hour tolerance period after each unsuspension to allow the interested user time to correct what caused the suspension, and rollover the following suspend/unsuspend times by 12+2 hours, solving a reported issue where users couldn't intervene on the server because their suspension was always at 5AM on their local timezone. Grace period now notified via e-mail as well. Previously the allowed time window was of 120 minutes and the same suspend/unsuspend times would be reused.
+- Improves the CPU Abuse mechanism: new 12-hour tolerance period after each unsuspension step/level to allow the interested user time to correct what caused the suspension, and rollover the following suspend/unsuspend times by 12+2 hours, solving a reported issue where users couldn't intervene on the server because their suspension was always at 5AM on their local timezone. Grace period now notified via e-mail as well. Previously the allowed time window was of 120 minutes and the same suspend/unsuspend times would be reused.
 
 v3.3.1-v3.3.8
 - Improvements and bug fixing - August 31st to September 6th, 2026
