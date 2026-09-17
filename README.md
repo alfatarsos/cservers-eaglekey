@@ -129,11 +129,11 @@ The entire system, from Control Server to Hypervisors, is designed to be as mono
 # Current Status, Development Tools and Versioning
 Launched in-production as of June 27th, 2026, at version 1.3.0 (agent + control), and declared Stable. 
 
-As of 28-08-2026, EagleKey has a redesigned logo and it's now at version 3.2.0 (agent + control), declared Stable.
+As of 17-09-2026, EagleKey has a redesigned logo and it's now at version 3.4.1 (agent + control), declared Stable.
 
 Total rounds of security hardening completed: 22, including pentests, code inspection and multiple fixing rounds. Total number of counted operational functions: 200+. Parity with VirtFusion-counted functions: 85%.
 
-Development Tools: Claude Fable 5 / Opus 5 and 4.8 / Sonnet 5 and 4.6 (45%); Cursor Composer 2.5 (20%); ChatGPT 5.6 Sol + Luna / 5.5 / Codex 5.3 (30%); DeepSeek v4 Pro 0813 (5%). Total lines: 160.000 (Control + Agent).
+Development Tools: Claude Fable 5 / Opus 5 and 4.8 / Sonnet 5 and 4.6 (45%); Cursor Composer 2.5 (15%); ChatGPT 5.6 Sol + Luna / 5.5 / Codex 5.3 (30%); DeepSeek v4/v4.1 (10%). Total lines: 160.000 (Control + Agent).
 
 Total development time (Code-to-Production): 23 days, 16h/day (368 hours). Total development time (Code + Project Planning): 41 days (400 hours) (metrics for 1.3.0)
 
