@@ -1,5 +1,20 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v3.4.2-v3.4.8 - September 19th to October 2nd, 2026
+- Improvements, bug fixing and refactoring round
+- The error codes are now translated and at the same time they do not have a direct detail. 243 error codes are covered with the span EK-xxxxxxx and codes that are not directly mapped post a specific error code to verify the internal error. This is cleaner for the client.
+- Significant refactoring of the VM's lifecycle management, with direct proof at all steps, separate VM mapping with safeguards outside of UUID (QEMU) or name (CHV), and gracious failure if some step has a fault
+- Several internal processes transferred from memory to disk and restart-reliable now
+- Increased reliability on successive changes KVM to CHV
+- Audit coverage significantly expanded and increased, now includes the author of commands (Admin area only on that detail)
+- Fixes a API call bug first reported on September 30th, 2026, where a wrong API call could erase a third-party server due to one of the fallback mechanisms erroneously interpreting a server's name; all touching parts of the WiseCP module and the EK area were corrected
+- Applies compression on ISO disks saved by the customer at the dataset, with marginal gains (2%)
+- Corrects a very rare bug where a login could not appear on the Client Area under a CHV console
+- Fixes a specific security validation for IP tunneling between BGP endpoints that was launched at 32 bits instead of 64 bits
+- Significantly increases several security procedures and removes obsolete code
+- Performance improvements on the WiseCP module due to API management improvements » faster experience at the WebStore
+- Other minor operational improvements
+
 v3.4.0-v3.4.1
 - Improvements, bug fixing and new minor point version round - September 8th to September 17th, 2026
 - More than 40 bugs corrected
