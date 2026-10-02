@@ -3,7 +3,7 @@ List of versions and their changes at C-Servers EagleKey.
 v3.4.2-v3.4.8 - September 19th to October 2nd, 2026
 - Improvements, bug fixing and refactoring round
 - The error codes are now translated and at the same time they no longer are verbose. 243 error codes are covered with the span EK-xxxxxxx and codes that are not directly mapped post a specific error code to verify the internal error. This is cleaner for the client and more professional.
-- Significant refactoring of the VM's lifecycle management, with direct proof and reconcilliation at every step, separate VM mapping with safeguards outside of UUID (QEMU) or name (CHV), and gracious failure if some step suffers a technical fault. Security for the reinstalling procedures has increased significantly from October 2nd.
+- Significant refactoring of the VM's lifecycle management, with direct proof and reconcilliation at every step, separate VM mapping with safeguards outside of UUID (QEMU) or name (CHV), and gracious failure if some step suffers a technical fault. Security for the reinstalling procedures has also increased significantly from October 2nd.
 - Several internal processes transferred from memory to disk and restart-reliable now
 - Increased reliability on successive changes KVM to CHV
 - Audit coverage significantly expanded and increased, now includes the author of commands (Admin area only on that detail)
