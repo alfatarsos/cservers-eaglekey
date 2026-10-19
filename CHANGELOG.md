@@ -12,8 +12,8 @@ List of versions and their changes at C-Servers EagleKey.
 - Exceptions on the intercommunication between the WebStore and EagleKey are now better handled
 - Major polkit memory leak, which caused up to 10 GB of RAM used by one single process on one of the hypervisors, was now contained and limited to a maximum of 512 MB;
 - Fixes backup behaviour that caused internal backup errors;
-- Control redeployments now wait for backups or reinstalls to complete and don't cut them off midway, avoiding VM reconcilliation issues or other issues that ahave affected previous versions;
-- Networking bridge errors on pre-reinstallation validations were corrected.
+- Control redeployments now wait for backups or reinstalls to complete and don't cut them off midway, avoiding VM reconcilliation issues or other issues that aave affected previous versions;
+- Some rare networking bridge errors on pre-reinstallation validations ('bridge not yet ready' errors) were corrected.
 - Retention adjustments on several security and metric aspects, some of which, though defined, weren't being followed (now fixed as well);
 - General hard disk cleanup;
 - New EK API extension for handling between the Support (Live Chat), WebStore and the EagleKey systems, for now with API 14 functions available (9 billing, 5 VM management) but rapidly expanding, with secure scoping and limited, strict permissions
