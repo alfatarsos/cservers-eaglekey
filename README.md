@@ -68,8 +68,6 @@ The primarily supported Linux systems are the same for Control Server and Hyperv
 
 » Debian 13.x 
 
-» openSUSE Leap 16.0 / SLES 16 (minimum .NET 10 LTS on control; hypervisor demands ndppd on Zypper; versioning mandatorily EL10-synced)
-
 Older hypervisor systems or systems that do not implement nftables by default are not supported: this tool exclusively uses nftables and never iptables.
 
 The entire system, from Control Server to Hypervisors, is designed to be as monolithic and enterprise-friendly as possible in its approach. The versioning of these operating systems is stable, enabling inherent stability in the service provided to the customer.
