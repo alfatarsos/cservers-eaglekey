@@ -1,5 +1,10 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v3.8.2-v3.11.1
+- Bug fixing round - October 20th, 2026
+- 98 bugs fixed, 13 on the Agent, 85 on the Control. The previous block of versions was primarily dedicated to the Agent.
+- Many improvements on the operation of several functions of EagleKey.
+
 v3.5.1-v3.8.1
 - Bug fixing round - October 19th and 20th, 2026
 - 75+ bugs fixed. Security updates to .NET and Go applied.
