@@ -1,5 +1,11 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v3.5.1-v3.8.1
+- Bug fixing round - October 19th and 20th, 2026
+- 75+ bugs fixed. Security updates to .NET and Go applied.
+- Improvements to the reinstall mechanism and handling.
+- Stability improvements to the Agent on the hypervisor.
+
 <b> 3.5.0 </b> 
 - Major Intermediate Point Version Launch - October 9th to October 19th, 2026
 - This round marks the reimplementation of AI-assisted code with Claude, now with Opus 5.5, along with additional elements provided by GLM-5.3, ChatGPT 6 Astra and 6.1 Sol. 
