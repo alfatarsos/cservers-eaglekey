@@ -1,6 +1,6 @@
 List of versions and their changes at C-Servers EagleKey.
 
-v3.15.2-v3.15.9
+v3.15.2-v3.16
 - Bug fixing and improvements round - October 21st, 2026
 - Fixes minor translation bugs, HTML code invariants and presentation bugs
 - Improves menus and presentation on the Admin and Client areas
