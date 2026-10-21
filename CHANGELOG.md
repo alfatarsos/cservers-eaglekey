@@ -1,6 +1,6 @@
 List of versions and their changes at C-Servers EagleKey.
 
-v3.12-v13.15.1
+v3.12-v3.15.1
 - Bug fixing round - October 20th, 2026
 - 25 bugs fixed, both Agent and Control.
 - New roundup of the deployed fixes - 15 adjustments.
