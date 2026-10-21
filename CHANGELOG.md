@@ -5,7 +5,7 @@ v3.15.2-v3.15.8
 - Fixes minor translation bugs, HTML code invariants and presentation bugs
 - Improves menus and presentation on the Admin and Client areas
 - For the first time, a VPS panel implements accessibility: EagleKey introduces Keybinds. These are directly targeted to serve all functions of the Portal, solely by pressing the Alt key continuously and then freely navigating around the multiple options with a single key press. The feature is added to users in the Admin and Client areas, approved for Linux, BSD, Windows and MacOS keybinds, and approved for Chromium-based browsers, Firefox-based browsers, and other text/graphical browsers that don't use keybinds starting with Alt + Letter. 
-- The Keybinds function is primarily targeted at technical users that don't wish to use a mouse or don't have available a mouse at any given moment (as it can happen for example with thin clients), and at users that don't use a mouse for accessibility reasons but still wish to manage their services. It also promotes a faster navigation on EagleKey.
+- The Keybinds function is primarily targeted at technical users that don't wish to use a mouse or don't have available a mouse at any given moment (as it can happen for example with thin clients), and at users that don't use a mouse for accessibility reasons but still wish to manage their services. It also promotes a faster, healtier navigation on EagleKey.
 - Keybinds: MacOS users only have the sequential mode available and the key is called Option. The text on the browser will reflect this whenever a browser detects a given user is accessing from a MacOS system. 
 
 v3.12-v3.15.1
