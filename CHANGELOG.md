@@ -10,6 +10,7 @@ v3.16.1
 - Fixes anti-spoofing on Debian-based nodes due to a bug which deleted the tables, no one has used that bug
 - Corrects a port difference for hypervisor communication
 - Fixes a minor agent deadlock when starting
+- Hyper-V entitlements were not being applied when a user originally installed a Linux system and then installed a Windows system, either via ISO or via template. This caused significant additional load on hypervisors, sometimes going up to 20% of the full CPU, due to the high number of switches required on CPU cores, and has been fixed by detecting every 30 minutes via partitioning format which OS is installed. 1% of customers were affected.
 
 v3.15.2-v3.16
 - Bug fixing and improvements round - October 21st, 2026
