@@ -2,7 +2,7 @@ List of versions and their changes at C-Servers EagleKey.
 
 v3.16.1
 - Bug fixing and improvements round - October 24th, 2026
-- Improves IPsec tunnelling detection on-screen
+- Improves IPsec tunnelling detection and execution on-screen
 - CPU performance improvements on the agents and the deployed tools (including HAProxy and log registration)
 - Fixes for the Control install script and the Hypervisor install script
 - New script for installing L3 tunnels
