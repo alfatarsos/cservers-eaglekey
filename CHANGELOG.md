@@ -1,5 +1,16 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v3.16.1
+- Bug fixing and improvements round - October 24th, 2026
+- Improves IPsec tunnelling detection on-screen
+- CPU performance improvements on the agents and the deployed tools (including HAProxy and log registration)
+- Fixes for the Control install script and the Hypervisor install script
+- New script for installing L3 tunnels
+- Fixes irqbalance execution on the hypervisors and by default, which was different between Debian and AlmaLinux
+- Fixes anti-spoofing on Debian-based nodes due to a bug which deleted the tables, no one has used that bug
+- Corrects a port difference for hypervisor communication
+- Fixes a minor agent deadlock when starting
+
 v3.15.2-v3.16
 - Bug fixing and improvements round - October 21st, 2026
 - Fixes minor translation bugs, HTML code invariants and presentation bugs
