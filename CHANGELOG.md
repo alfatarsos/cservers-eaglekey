@@ -1,5 +1,11 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v3.16.2-v3.16.9
+- Minor bugs and improvements roundup - October 25th to 28th, 2026
+- The VMs are now manageable from the very first VM that becomes up and running, like on SolusVM and VirtFusion: previously a helper only got responses after all VMs were loaded, now raising them activates interaction mechanisms anyway.
+- When one of the hypervisors is not up, the backups would stall after 6 hours, leaving some VMs without backups. This behaviour is now fixed. It was also reinforced to search and retry backups automatically for all VMs that are not yet with a backup available.
+- Other improvements
+
 v3.16.1
 - Bug fixing and improvements round - October 24th, 2026
 - Improves IPsec tunnelling detection and execution on-screen
