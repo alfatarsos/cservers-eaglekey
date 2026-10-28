@@ -1,10 +1,11 @@
 List of versions and their changes at C-Servers EagleKey.
 
-v3.16.2-v3.16.9
+v3.16.2-v3.16.10
 - Minor bugs and improvements roundup - October 25th to 28th, 2026
 - The VMs are now manageable from the very first VM that becomes up and running, like on SolusVM and VirtFusion: previously a helper only got responses after all VMs were loaded, now starting to raise them activates interaction mechanisms immediately.
 - When one of the hypervisors is not up, the backups would stall after 6 hours, leaving some VMs without backups. This behaviour is now fixed. It was also reinforced to search and retry backups automatically for all VMs that are not yet with a backup available.
 - Agent and control code/performance optimizations, especially on statistics, with the correspondent CPU consumption reduction at the hypervisors and the Control.
+- Following a suggestion from a customer, uptime notifications are now directly sent to the Notifications area whenever a server is down because of an hypervisor being down as well - the customer does not have to guess at which hypervisor it is anymore, is assured that it's not something that has done with the VPS service, and is redirected to the Status area to check for progress on that issue. The Uptime menu on the Client Area has also started to reflect whenever an issue exists at an hypervisor, as a redundancy for the notifications (which can be excluded).
 - Other improvements
 
 v3.16.1
