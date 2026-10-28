@@ -6,8 +6,8 @@ v3.16.2-v3.16.10
 - When one of the hypervisors is not up, the backups would stall after 6 hours, leaving some VMs without backups. This behaviour is now fixed. It was also reinforced to search and retry backups automatically for all VMs that are not yet with a backup available.
 - Agent and control code/performance optimizations, especially on statistics, with the correspondent CPU consumption reduction at the hypervisors and the Control.
 - Following a suggestion from a customer, uptime notifications are now directly sent to the Notifications area whenever a server is down because of an hypervisor being down as well - the customer does not have to guess at which hypervisor it is anymore, is assured that it's not something that has done with the VPS service, and is redirected to the Status area to check for progress on that issue. The Uptime menu on the Client Area has also started to reflect whenever an issue exists at an hypervisor, as a redundancy for the notifications (which can be excluded).
-- Protection improvements on non-VDS plans in order to avoid service/performance degradation for other users due to pegging at 100% of a vCore for long periods - degrades graciously and still alows bursts at 100% with the cpu.max.burst parameter.
-- In accordance with commercial policies, creates a global maximum of 16.67% of the hypervisor's CPU capacity allocated to a single user/customer, with admin warning at 15% and correspondent monitorization.
+- Protection improvements on non-VDS plans in order to avoid service/performance degradation for other users due to pegging at 100% of a vCore for long periods - degrades graciously and still alows bursts at 100% with the cpu.max.burst parameter. VDS (dedicated core) services are exempted from this policy.
+- In accordance with recent commercial policies, creates a global maximum of 16.67% of the hypervisor's CPU capacity allocated to a single user/customer, with admin warning at 15% and correspondent monitorization. VDS (dedicated core) services are exempted from this policy.
 - Other improvements
 
 v3.16.1
