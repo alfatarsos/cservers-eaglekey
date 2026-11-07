@@ -1,5 +1,18 @@
 List of versions and their changes at C-Servers EagleKey.
 
+v3.16.11-v3.16.22
+- Bugs and improvements roundup - October 29th to November 7th, 2026
+- Implements disk abuse mechanisms, now enforced, and the first adjustments to them
+- Corrections to the CPU overusage and abuse mechanisms
+- Fixes an issue with Netplan and IPv4 configuration pointing at containers instead of VMs
+- Performance optimizations on statistics and agent consumption
+- First trials with BBRv3 for CHV VM's
+- Improvements to the protection mechanisms for port scanning
+- Being studied: deployment of deterministic NAT
+- Fixes and improvements to the backup mechanisms
+- Integrations with the Live Chat for automated usage
+- Other improvements
+
 v3.16.2-v3.16.10
 - Minor bugs and improvements roundup - October 25th to 28th, 2026
 - The VMs are now manageable from the very first VM that becomes up and running, like on SolusVM and VirtFusion: previously a helper only got responses after all VMs were loaded, now starting to raise them activates interaction mechanisms immediately.
