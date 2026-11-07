@@ -1,6 +1,6 @@
 List of versions and their changes at C-Servers EagleKey.
 
-v3.16.11-v3.16.22
+v3.16.11-v3.16.24
 - Bugs and improvements roundup - October 29th to November 7th, 2026
 - Implements disk abuse mechanisms, now enforced, and the first adjustments to them
 - Corrections to the CPU overusage and abuse mechanisms
